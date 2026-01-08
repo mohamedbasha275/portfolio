@@ -2,41 +2,21 @@
     "title": {
         "locales": {
             "en": {
-                "title_short": "Skills",
-                "title_short_nav": "Skills",
+                "title_short": "Tech Skills",
+                "title_short_nav": "Tech Skills",
                 "title_long_prefix": "Explore",
                 "title_long": "My {{Technical Skills}}"
-            },
-            "es": {
-                "title_short": "Habilidades",
-                "title_short_nav": "Habilidades",
-                "title_long_prefix": "Explora",
-                "title_long": "Mis {{Habilidades Técnicas}}"
-            },
-            "fr": {
-                "title_short": "Capacités",
-                "title_short_nav": "Capacités",
-                "title_long_prefix": "Explorez",
-                "title_long": "Mes {{Compétences Techniques}}"
-            },
-            "ko": {
-                "title_short": "스킬",
-                "title_short_nav": "스킬",
-                "title_long_prefix": "이것은 내",
-                "title_long": "{{기술 스킬}}입니다"
             }
         }
     },
-
     "articles": [
         {
             "id": 1,
-            "component": "ArticleSkills",
+            "component": "ArticleStack",
             "locales": {
-                "en": {"title": "Mobile Development"},
-                "es": {"title": "Desarrollo Móvil"},
-                "fr": {"title": "Développement Mobile"},
-                "ko": {"title": "모바일 개발"}
+                "en": {
+                    "title": "Mobile Development"
+                }
             },
             "settings": {
                 "max_items_per_row": 3,
@@ -48,91 +28,79 @@
             "items": [
                 {
                     "id": 1,
-                    "img": "",
                     "faIcon": "fa-brands fa-flutter",
-                    "faIconColors": {"bg": "", "fill": "#02569B"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 95,
+                    "faIconColors": {
+                        "fill": "#02569B"
+                    },
                     "locales": {
                         "en": {
                             "title": "Flutter",
-                            "text": "Expert in Flutter for cross-platform mobile development.",
-                            "level": ""
+                            "text": "Expert in Flutter for cross-platform mobile development."
                         }
                     }
                 },
                 {
                     "id": 2,
-                    "img": "",
-                    "faIcon": "fa-solid fa-code",
-                    "faIconColors": {"bg": "", "fill": "#0175C2"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 95,
+                    "faIcon": "fa-brands fa-dart-lang",
+                    "faIconColors": {
+                        "fill": "#0175C2"
+                    },
                     "locales": {
                         "en": {
                             "title": "Dart",
-                            "text": "Proficient in Dart programming language.",
-                            "level": ""
+                            "text": "Proficient in Dart programming language."
                         }
                     }
                 },
                 {
                     "id": 3,
-                    "img": "",
-                    "faIcon": "fa-solid fa-layer-group",
-                    "faIconColors": {"bg": "", "fill": "#8beff8"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 90,
+                    "faIcon": "fa-solid fa-boxes-stacked",
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
                     "locales": {
                         "en": {
                             "title": "Provider",
-                            "text": "State management using Provider pattern.",
-                            "level": ""
+                            "text": "State management using Provider pattern."
                         }
                     }
                 },
                 {
                     "id": 4,
-                    "img": "",
                     "faIcon": "fa-solid fa-diagram-project",
-                    "faIconColors": {"bg": "", "fill": "#8beff8"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 90,
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
                     "locales": {
                         "en": {
                             "title": "Bloc",
-                            "text": "State management with Bloc pattern.",
-                            "level": ""
+                            "text": "State management with Bloc pattern."
                         }
                     }
                 },
                 {
                     "id": 5,
-                    "img": "",
-                    "faIcon": "fa-solid fa-cube",
-                    "faIconColors": {"bg": "", "fill": "#8beff8"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 90,
+                    "faIcon": "fa-solid fa-cubes",
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
                     "locales": {
                         "en": {
                             "title": "Cubit",
-                            "text": "State management using Cubit pattern.",
-                            "level": ""
+                            "text": "State management using Cubit pattern."
                         }
                     }
                 },
                 {
                     "id": 6,
-                    "img": "",
-                    "faIcon": "fa-solid fa-sliders",
-                    "faIconColors": {"bg": "", "fill": "#8beff8"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 90,
+                    "faIcon": "fa-solid fa-sliders-h",
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
                     "locales": {
                         "en": {
                             "title": "State Management",
-                            "text": "Expert in various state management solutions.",
-                            "level": ""
+                            "text": "Expert in various state management solutions."
                         }
                     }
                 }
@@ -140,12 +108,11 @@
         },
         {
             "id": 2,
-            "component": "ArticleSkills",
+            "component": "ArticleStack",
             "locales": {
-                "en": {"title": "Architecture & Patterns"},
-                "es": {"title": "Arquitectura y Patrones"},
-                "fr": {"title": "Architecture et Modèles"},
-                "ko": {"title": "아키텍처 및 패턴"}
+                "en": {
+                    "title": "Architecture & Patterns"
+                }
             },
             "settings": {
                 "max_items_per_row": 3,
@@ -157,91 +124,79 @@
             "items": [
                 {
                     "id": 1,
-                    "img": "",
-                    "faIcon": "fa-solid fa-sitemap",
-                    "faIconColors": {"bg": "", "fill": "#8beff8"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 95,
+                    "faIcon": "fa-solid fa-building",
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
                     "locales": {
                         "en": {
                             "title": "Clean Architecture",
-                            "text": "Expert in Clean Architecture principles.",
-                            "level": ""
+                            "text": "Expert in Clean Architecture principles."
                         }
                     }
                 },
                 {
                     "id": 2,
-                    "img": "",
                     "faIcon": "fa-solid fa-diagram-project",
-                    "faIconColors": {"bg": "", "fill": "#8beff8"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 85,
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
                     "locales": {
                         "en": {
                             "title": "MVC",
-                            "text": "Model-View-Controller architecture pattern.",
-                            "level": ""
+                            "text": "Model-View-Controller architecture pattern."
                         }
                     }
                 },
                 {
                     "id": 3,
-                    "img": "",
                     "faIcon": "fa-solid fa-diagram-project",
-                    "faIconColors": {"bg": "", "fill": "#8beff8"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 85,
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
                     "locales": {
                         "en": {
                             "title": "MVVM",
-                            "text": "Model-View-ViewModel architecture pattern.",
-                            "level": ""
+                            "text": "Model-View-ViewModel architecture pattern."
                         }
                     }
                 },
                 {
                     "id": 4,
-                    "img": "",
-                    "faIcon": "fa-solid fa-shield-halved",
-                    "faIconColors": {"bg": "", "fill": "#8beff8"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 90,
+                    "faIcon": "fa-solid fa-star",
+                    "faIconColors": {
+                        "fill": "#FFD700"
+                    },
                     "locales": {
                         "en": {
                             "title": "SOLID Principles",
-                            "text": "Strong understanding of SOLID design principles.",
-                            "level": ""
+                            "text": "Strong understanding of SOLID design principles."
                         }
                     }
                 },
                 {
                     "id": 5,
-                    "img": "",
                     "faIcon": "fa-solid fa-puzzle-piece",
-                    "faIconColors": {"bg": "", "fill": "#8beff8"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 85,
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
                     "locales": {
                         "en": {
                             "title": "Design Patterns",
-                            "text": "Proficient in various design patterns.",
-                            "level": ""
+                            "text": "Proficient in various design patterns."
                         }
                     }
                 },
                 {
                     "id": 6,
-                    "img": "",
-                    "faIcon": "fa-solid fa-object-group",
-                    "faIconColors": {"bg": "", "fill": "#8beff8"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 90,
+                    "faIcon": "fa-solid fa-cube",
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
                     "locales": {
                         "en": {
                             "title": "OOP",
-                            "text": "Object-Oriented Programming principles.",
-                            "level": ""
+                            "text": "Object-Oriented Programming principles."
                         }
                     }
                 }
@@ -249,12 +204,11 @@
         },
         {
             "id": 3,
-            "component": "ArticleSkills",
+            "component": "ArticleStack",
             "locales": {
-                "en": {"title": "Testing & CI/CD"},
-                "es": {"title": "Pruebas y CI/CD"},
-                "fr": {"title": "Tests et CI/CD"},
-                "ko": {"title": "테스트 및 CI/CD"}
+                "en": {
+                    "title": "Testing & CI/CD"
+                }
             },
             "settings": {
                 "max_items_per_row": 3,
@@ -266,91 +220,79 @@
             "items": [
                 {
                     "id": 1,
-                    "img": "",
-                    "faIcon": "fa-solid fa-vial",
-                    "faIconColors": {"bg": "", "fill": "#8beff8"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 90,
+                    "faIcon": "fa-solid fa-flask",
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
                     "locales": {
                         "en": {
                             "title": "Unit Testing",
-                            "text": "Writing comprehensive unit tests.",
-                            "level": ""
+                            "text": "Writing comprehensive unit tests."
                         }
                     }
                 },
                 {
                     "id": 2,
-                    "img": "",
                     "faIcon": "fa-solid fa-mobile-screen-button",
-                    "faIconColors": {"bg": "", "fill": "#8beff8"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 90,
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
                     "locales": {
                         "en": {
                             "title": "Widget Testing",
-                            "text": "Widget testing in Flutter.",
-                            "level": ""
+                            "text": "Widget testing in Flutter."
                         }
                     }
                 },
                 {
                     "id": 3,
-                    "img": "",
-                    "faIcon": "fa-solid fa-link",
-                    "faIconColors": {"bg": "", "fill": "#8beff8"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 85,
+                    "faIcon": "fa-solid fa-plug",
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
                     "locales": {
                         "en": {
                             "title": "Integration Testing",
-                            "text": "End-to-end integration testing.",
-                            "level": ""
+                            "text": "End-to-end integration testing."
                         }
                     }
                 },
                 {
                     "id": 4,
-                    "img": "",
                     "faIcon": "fa-brands fa-flutter",
-                    "faIconColors": {"bg": "", "fill": "#02569B"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 90,
+                    "faIconColors": {
+                        "fill": "#02569B"
+                    },
                     "locales": {
                         "en": {
                             "title": "Flutter Test",
-                            "text": "Flutter testing framework.",
-                            "level": ""
+                            "text": "Flutter testing framework."
                         }
                     }
                 },
                 {
                     "id": 5,
-                    "img": "",
                     "faIcon": "fa-brands fa-github",
-                    "faIconColors": {"bg": "", "fill": "#181717"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 85,
+                    "faIconColors": {
+                        "fill": "#FFFFFF"
+                    },
                     "locales": {
                         "en": {
                             "title": "GitHub Actions",
-                            "text": "CI/CD automation with GitHub Actions.",
-                            "level": ""
+                            "text": "CI/CD automation with GitHub Actions."
                         }
                     }
                 },
                 {
                     "id": 6,
-                    "img": "",
-                    "faIcon": "fa-solid fa-arrows-rotate",
-                    "faIconColors": {"bg": "", "fill": "#8beff8"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 85,
+                    "faIcon": "fa-solid fa-gear",
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
                     "locales": {
                         "en": {
                             "title": "CI/CD Pipelines",
-                            "text": "Continuous Integration and Deployment.",
-                            "level": ""
+                            "text": "Continuous Integration and Deployment."
                         }
                     }
                 }
@@ -358,12 +300,11 @@
         },
         {
             "id": 4,
-            "component": "ArticleSkills",
+            "component": "ArticleStack",
             "locales": {
-                "en": {"title": "Backend & APIs"},
-                "es": {"title": "Backend y APIs"},
-                "fr": {"title": "Backend et APIs"},
-                "ko": {"title": "백엔드 및 API"}
+                "en": {
+                    "title": "Backend & APIs"
+                }
             },
             "settings": {
                 "max_items_per_row": 3,
@@ -375,26 +316,23 @@
             "items": [
                 {
                     "id": 1,
-                    "img": "",
-                    "faIcon": "fa-solid fa-cloud",
-                    "faIconColors": {"bg": "", "fill": "#8beff8"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 90,
+                    "faIcon": "fa-solid fa-server",
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
                     "locales": {
                         "en": {
                             "title": "REST APIs",
-                            "text": "Building and consuming RESTful APIs.",
-                            "level": ""
+                            "text": "Building and consuming RESTful APIs."
                         }
                     }
                 },
                 {
                     "id": 2,
-                    "img": "",
-                    "faIcon": "fa-solid fa-diagram-project",
-                    "faIconColors": {"bg": "", "fill": "#8beff8"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 60,
+                    "faIcon": "fa-solid fa-project-diagram",
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
                     "locales": {
                         "en": {
                             "title": "GraphQL",
@@ -405,31 +343,27 @@
                 },
                 {
                     "id": 3,
-                    "img": "",
                     "faIcon": "fa-brands fa-laravel",
-                    "faIconColors": {"bg": "", "fill": "#FF2D20"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 80,
+                    "faIconColors": {
+                        "fill": "#FF2D20"
+                    },
                     "locales": {
                         "en": {
                             "title": "Laravel",
-                            "text": "PHP framework for web applications.",
-                            "level": ""
+                            "text": "PHP framework for web applications."
                         }
                     }
                 },
                 {
                     "id": 4,
-                    "img": "",
                     "faIcon": "fa-brands fa-php",
-                    "faIconColors": {"bg": "", "fill": "#777BB4"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 80,
+                    "faIconColors": {
+                        "fill": "#777BB4"
+                    },
                     "locales": {
                         "en": {
                             "title": "PHP",
-                            "text": "Server-side scripting language.",
-                            "level": ""
+                            "text": "Server-side scripting language."
                         }
                     }
                 }
@@ -437,12 +371,11 @@
         },
         {
             "id": 5,
-            "component": "ArticleSkills",
+            "component": "ArticleStack",
             "locales": {
-                "en": {"title": "Databases"},
-                "es": {"title": "Bases de Datos"},
-                "fr": {"title": "Bases de Données"},
-                "ko": {"title": "데이터베이스"}
+                "en": {
+                    "title": "Databases"
+                }
             },
             "settings": {
                 "max_items_per_row": 3,
@@ -454,61 +387,53 @@
             "items": [
                 {
                     "id": 1,
-                    "img": "",
                     "faIcon": "fa-solid fa-database",
-                    "faIconColors": {"bg": "", "fill": "#003B57"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 85,
+                    "faIconColors": {
+                        "fill": "#003B57"
+                    },
                     "locales": {
                         "en": {
                             "title": "SQLite",
-                            "text": "Lightweight SQL database engine.",
-                            "level": ""
+                            "text": "Lightweight SQL database engine."
                         }
                     }
                 },
                 {
                     "id": 2,
-                    "img": "",
                     "faIcon": "fa-solid fa-database",
-                    "faIconColors": {"bg": "", "fill": "#8beff8"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 90,
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
                     "locales": {
                         "en": {
                             "title": "Hive",
-                            "text": "Lightweight NoSQL database for Flutter.",
-                            "level": ""
+                            "text": "Lightweight NoSQL database for Flutter."
                         }
                     }
                 },
                 {
                     "id": 3,
-                    "img": "",
                     "faIcon": "fa-solid fa-database",
-                    "faIconColors": {"bg": "", "fill": "#8beff8"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 90,
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
                     "locales": {
                         "en": {
                             "title": "Isar",
-                            "text": "Fast NoSQL database for Flutter.",
-                            "level": ""
+                            "text": "Fast NoSQL database for Flutter."
                         }
                     }
                 },
                 {
                     "id": 4,
-                    "img": "",
                     "faIcon": "fa-solid fa-database",
-                    "faIconColors": {"bg": "", "fill": "#4479A1"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 80,
+                    "faIconColors": {
+                        "fill": "#4479A1"
+                    },
                     "locales": {
                         "en": {
                             "title": "MySQL",
-                            "text": "Relational database management system.",
-                            "level": ""
+                            "text": "Relational database management system."
                         }
                     }
                 }
@@ -516,12 +441,11 @@
         },
         {
             "id": 6,
-            "component": "ArticleSkills",
+            "component": "ArticleStack",
             "locales": {
-                "en": {"title": "DevOps & Tools"},
-                "es": {"title": "DevOps y Herramientas"},
-                "fr": {"title": "DevOps et Outils"},
-                "ko": {"title": "DevOps 및 도구"}
+                "en": {
+                    "title": "DevOps & Tools"
+                }
             },
             "settings": {
                 "max_items_per_row": 3,
@@ -533,106 +457,92 @@
             "items": [
                 {
                     "id": 1,
-                    "img": "",
                     "faIcon": "fa-brands fa-git-alt",
-                    "faIconColors": {"bg": "", "fill": "#F05032"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 90,
+                    "faIconColors": {
+                        "fill": "#F05032"
+                    },
                     "locales": {
                         "en": {
                             "title": "Git",
-                            "text": "Version control system.",
-                            "level": ""
+                            "text": "Version control system."
                         }
                     }
                 },
                 {
                     "id": 2,
-                    "img": "",
                     "faIcon": "fa-brands fa-github",
-                    "faIconColors": {"bg": "", "fill": "#181717"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 90,
+                    "faIconColors": {
+                        "fill": "#FFFFFF"
+                    },
                     "locales": {
                         "en": {
                             "title": "GitHub/GitLab",
-                            "text": "Code hosting and collaboration platforms.",
-                            "level": ""
+                            "text": "Code hosting and collaboration platforms."
                         }
                     }
                 },
                 {
                     "id": 3,
-                    "img": "",
-                    "faIcon": "fa-brands fa-google",
-                    "faIconColors": {"bg": "", "fill": "#4285F4"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 95,
+                    "faIcon": "fa-solid fa-fire",
+                    "faIconColors": {
+                        "fill": "#FFA611"
+                    },
                     "locales": {
                         "en": {
                             "title": "Firebase",
-                            "text": "Auth, Firestore, Messaging, Crashlytics.",
-                            "level": ""
+                            "text": "Auth, Firestore, Messaging, Crashlytics."
                         }
                     }
                 },
                 {
                     "id": 4,
-                    "img": "",
                     "faIcon": "fa-solid fa-link",
-                    "faIconColors": {"bg": "", "fill": "#8beff8"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 90,
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
                     "locales": {
                         "en": {
                             "title": "App Links & Deep Linking",
-                            "text": "Deep linking implementation.",
-                            "level": ""
+                            "text": "Deep linking implementation."
                         }
                     }
                 },
                 {
                     "id": 5,
-                    "img": "",
                     "faIcon": "fa-solid fa-credit-card",
-                    "faIconColors": {"bg": "", "fill": "#8beff8"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 85,
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
                     "locales": {
                         "en": {
                             "title": "Payment Integration",
-                            "text": "Stripe, PayPal, and local payment solutions.",
-                            "level": ""
+                            "text": "Stripe, PayPal, and local payment solutions."
                         }
                     }
                 },
                 {
                     "id": 6,
-                    "img": "",
                     "faIcon": "fa-solid fa-bell",
-                    "faIconColors": {"bg": "", "fill": "#8beff8"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 90,
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
                     "locales": {
                         "en": {
                             "title": "Push Notifications",
-                            "text": "Implementing push notifications.",
-                            "level": ""
+                            "text": "Implementing push notifications."
                         }
                     }
                 },
                 {
                     "id": 7,
-                    "img": "",
-                    "faIcon": "fa-solid fa-language",
-                    "faIconColors": {"bg": "", "fill": "#8beff8"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 90,
+                    "faIcon": "fa-solid fa-globe",
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
                     "locales": {
                         "en": {
                             "title": "Localization",
-                            "text": "Multi-language support and RTL handling.",
-                            "level": ""
+                            "text": "Multi-language support and RTL handling."
                         }
                     }
                 }
@@ -640,12 +550,11 @@
         },
         {
             "id": 7,
-            "component": "ArticleSkills",
+            "component": "ArticleStack",
             "locales": {
-                "en": {"title": "Web"},
-                "es": {"title": "Web"},
-                "fr": {"title": "Web"},
-                "ko": {"title": "웹"}
+                "en": {
+                    "title": "Web"
+                }
             },
             "settings": {
                 "max_items_per_row": 3,
@@ -657,106 +566,92 @@
             "items": [
                 {
                     "id": 1,
-                    "img": "",
                     "faIcon": "fa-brands fa-html5",
-                    "faIconColors": {"bg": "", "fill": "#E34F26"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 85,
+                    "faIconColors": {
+                        "fill": "#E34F26"
+                    },
                     "locales": {
                         "en": {
                             "title": "HTML",
-                            "text": "HyperText Markup Language.",
-                            "level": ""
+                            "text": "HyperText Markup Language."
                         }
                     }
                 },
                 {
                     "id": 2,
-                    "img": "",
                     "faIcon": "fa-brands fa-css3-alt",
-                    "faIconColors": {"bg": "", "fill": "#1572B6"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 80,
+                    "faIconColors": {
+                        "fill": "#1572B6"
+                    },
                     "locales": {
                         "en": {
                             "title": "CSS",
-                            "text": "Cascading Style Sheets.",
-                            "level": ""
+                            "text": "Cascading Style Sheets."
                         }
                     }
                 },
                 {
                     "id": 3,
-                    "img": "",
                     "faIcon": "fa-brands fa-js",
-                    "faIconColors": {"bg": "", "fill": "#F7DF1E"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 80,
+                    "faIconColors": {
+                        "fill": "#F7DF1E"
+                    },
                     "locales": {
                         "en": {
                             "title": "JavaScript",
-                            "text": "Programming language for web development.",
-                            "level": ""
+                            "text": "Programming language for web development."
                         }
                     }
                 },
                 {
                     "id": 4,
-                    "img": "",
                     "faIcon": "fa-brands fa-js",
-                    "faIconColors": {"bg": "", "fill": "#0769AD"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 75,
+                    "faIconColors": {
+                        "fill": "#0769AD"
+                    },
                     "locales": {
                         "en": {
                             "title": "jQuery",
-                            "text": "JavaScript library.",
-                            "level": ""
+                            "text": "JavaScript library."
                         }
                     }
                 },
                 {
                     "id": 5,
-                    "img": "",
                     "faIcon": "fa-brands fa-bootstrap",
-                    "faIconColors": {"bg": "", "fill": "#7952B3"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 85,
+                    "faIconColors": {
+                        "fill": "#7952B3"
+                    },
                     "locales": {
                         "en": {
                             "title": "Bootstrap",
-                            "text": "CSS framework for responsive design.",
-                            "level": ""
+                            "text": "CSS framework for responsive design."
                         }
                     }
                 },
                 {
                     "id": 6,
-                    "img": "",
                     "faIcon": "fa-solid fa-mobile-screen-button",
-                    "faIconColors": {"bg": "", "fill": "#8beff8"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 80,
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
                     "locales": {
                         "en": {
                             "title": "Cordova",
-                            "text": "Hybrid mobile app framework.",
-                            "level": ""
+                            "text": "Hybrid mobile app framework."
                         }
                     }
                 },
                 {
                     "id": 7,
-                    "img": "",
                     "faIcon": "fa-solid fa-mobile-screen-button",
-                    "faIconColors": {"bg": "", "fill": "#8beff8"},
-                    "date": {"year": null, "month": null},
-                    "percentage": 70,
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
                     "locales": {
                         "en": {
                             "title": "Framework7",
-                            "text": "Full-featured mobile framework.",
-                            "level": ""
+                            "text": "Full-featured mobile framework."
                         }
                     }
                 }

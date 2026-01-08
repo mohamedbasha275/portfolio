@@ -6,28 +6,9 @@
                 "title_short_nav": "Projects",
                 "title_long_prefix": "Take a look at",
                 "title_long": "My {{Projects}}"
-            },
-            "es": {
-                "title_short": "Proyectos",
-                "title_short_nav": "Proyectos",
-                "title_long_prefix": "Explora",
-                "title_long": "Mis {{Proyectos}}"
-            },
-            "fr": {
-                "title_short": "Projets",
-                "title_short_nav": "Projets",
-                "title_long_prefix": "Découvrez",
-                "title_long": "Mes {{Projets}}"
-            },
-            "ko": {
-                "title_short": "프로젝트",
-                "title_short_nav": "프로젝트",
-                "title_long_prefix": "이것은 내",
-                "title_long": "{{프로젝트}}입니다"
             }
         }
     },
-
     "articles": [
         {
             "id": 1,
@@ -38,28 +19,12 @@
                     "category_apps": "Apps",
                     "category_web": "Web",
                     "category_utilities": "Utilities"
-                },
-                "es": {
-                    "category_all": "Todo",
-                    "category_apps": "Apps",
-                    "category_web": "Web",
-                    "category_utilities": "Utilidades"
-                },
-                "fr": {
-                    "category_all": "Tout",
-                    "category_apps": "Apps",
-                    "category_web": "Web",
-                    "category_utilities": "Utilitaires"
-                },
-                "ko": {
-                    "category_all": "모두",
-                    "category_apps": "앱",
-                    "category_web": "웹",
-                    "category_utilities": "유틸리티"
                 }
             },
             "settings": {
-                "categorize_by": ["category_apps"],
+                "categorize_by": [
+                    "category_apps"
+                ],
                 "order_items_by": "id",
                 "order_items_sort": "asc"
             },
@@ -69,10 +34,17 @@
                     "categoryId": "category_apps",
                     "img": "",
                     "faIcon": "fa-solid fa-book-quran",
-                    "faIconColors": {"bg": "#2E7D32", "fill": "#FFFFFF"},
+                    "faIconColors": {
+                        "bg": "#2E7D32",
+                        "fill": "#FFFFFF"
+                    },
                     "preview": {
                         "links": [
-                            {"href": "https://play.google.com/store/apps/details?id=net.quran.holly", "tooltipString": "see_on_google_play", "faIcon": "fa-brands fa-google-play"}
+                            {
+                                "href": "https://play.google.com/store/apps/details?id=net.quran.holly",
+                                "tooltipString": "see_on_google_play",
+                                "faIcon": "fa-brands fa-google-play"
+                            }
                         ],
                         "screenshots": [],
                         "screenshotsAspectRatio": "",
@@ -82,19 +54,12 @@
                         "en": {
                             "title": "Holly Quran App",
                             "text": "Comprehensive Islamic application featuring the complete Quran with interpretations, daily supplications, Fortress of the Muslim, and Prophet's biography. Built with <b>Flutter</b> and <b>SQLite</b> for offline-first experience, implementing bookmarking and advanced search functionality across Islamic content.",
-                            "tags": ["Flutter", "SQLite", "Islamic", "Quran"]
-                        },
-                        "es": {
-                            "text": "Aplicación islámica integral que incluye el Corán completo con interpretaciones, súplicas diarias, Fortaleza del Musulmán y biografía del Profeta. Construida con <b>Flutter</b> y <b>SQLite</b> para una experiencia offline-first, implementando marcadores y funcionalidad de búsqueda avanzada en contenido islámico.",
-                            "tags": ["Flutter", "SQLite", "Islámico", "Corán"]
-                        },
-                        "fr": {
-                            "text": "Application islamique complète présentant le Coran complet avec interprétations, supplications quotidiennes, Forteresse du Musulman et biographie du Prophète. Construite avec <b>Flutter</b> et <b>SQLite</b> pour une expérience offline-first, implémentant les signets et la fonctionnalité de recherche avancée dans le contenu islamique.",
-                            "tags": ["Flutter", "SQLite", "Islamique", "Coran"]
-                        },
-                        "ko": {
-                            "text": "해석, 일일 기도, 무슬림의 요새 및 예언자 전기가 포함된 완전한 꾸란을 특징으로 하는 포괄적인 이슬람 애플리케이션. 오프라인 우선 경험을 위해 <b>Flutter</b> 및 <b>SQLite</b>로 구축되었으며, 이슬람 콘텐츠 전반에 걸쳐 북마크 및 고급 검색 기능을 구현합니다.",
-                            "tags": ["Flutter", "SQLite", "이슬람", "꾸란"]
+                            "tags": [
+                                "Flutter",
+                                "SQLite",
+                                "Islamic",
+                                "Quran"
+                            ]
                         }
                     }
                 },
@@ -103,11 +68,22 @@
                     "categoryId": "category_apps",
                     "img": "",
                     "faIcon": "fa-solid fa-book",
-                    "faIconColors": {"bg": "#8B4513", "fill": "#FFFFFF"},
+                    "faIconColors": {
+                        "bg": "#8B4513",
+                        "fill": "#FFFFFF"
+                    },
                     "preview": {
                         "links": [
-                            {"href": "https://play.google.com/store/apps/details?id=com.dawawin.app", "tooltipString": "see_on_google_play", "faIcon": "fa-brands fa-google-play"},
-                            {"href": "https://apps.apple.com/us/app/%D8%AF%D9%88%D8%A7%D9%88%D9%8A%D9%86/id6476870397", "tooltipString": "see_on_app_store", "faIcon": "fa-brands fa-apple"}
+                            {
+                                "href": "https://play.google.com/store/apps/details?id=com.dawawin.app",
+                                "tooltipString": "see_on_google_play",
+                                "faIcon": "fa-brands fa-google-play"
+                            },
+                            {
+                                "href": "https://apps.apple.com/us/app/%D8%AF%D9%88%D8%A7%D9%88%D9%8A%D9%86/id6476870397",
+                                "tooltipString": "see_on_app_store",
+                                "faIcon": "fa-brands fa-apple"
+                            }
                         ],
                         "screenshots": [],
                         "screenshotsAspectRatio": "",
@@ -117,19 +93,12 @@
                         "en": {
                             "title": "Dawawin",
                             "text": "Poetry learning platform showcasing Arabic poems across all literary eras with interactive memorization system. Features word-by-word deletion challenges and progressive testing from individual words to complete verses, helping users memorize poems efficiently using <b>Flutter</b> and <b>Hive</b>.",
-                            "tags": ["Flutter", "Hive", "Poetry", "Education"]
-                        },
-                        "es": {
-                            "text": "Plataforma de aprendizaje de poesía que muestra poemas árabes de todas las épocas literarias con sistema de memorización interactivo. Incluye desafíos de eliminación palabra por palabra y pruebas progresivas desde palabras individuales hasta versos completos, ayudando a los usuarios a memorizar poemas de manera eficiente usando <b>Flutter</b> y <b>Hive</b>.",
-                            "tags": ["Flutter", "Hive", "Poesía", "Educación"]
-                        },
-                        "fr": {
-                            "text": "Plateforme d'apprentissage de la poésie présentant des poèmes arabes de toutes les époques littéraires avec un système de mémorisation interactif. Comprend des défis de suppression mot par mot et des tests progressifs des mots individuels aux versets complets, aidant les utilisateurs à mémoriser efficacement les poèmes en utilisant <b>Flutter</b> et <b>Hive</b>.",
-                            "tags": ["Flutter", "Hive", "Poésie", "Éducation"]
-                        },
-                        "ko": {
-                            "text": "모든 문학 시대의 아랍 시를 대화형 암기 시스템으로 선보이는 시 학습 플랫폼. 단어별 삭제 도전과 개별 단어에서 완전한 구절까지의 점진적 테스트 기능을 포함하여 사용자가 <b>Flutter</b>와 <b>Hive</b>를 사용하여 시를 효율적으로 암기할 수 있도록 도와줍니다.",
-                            "tags": ["Flutter", "Hive", "시", "교육"]
+                            "tags": [
+                                "Flutter",
+                                "Hive",
+                                "Poetry",
+                                "Education"
+                            ]
                         }
                     }
                 },
@@ -138,11 +107,22 @@
                     "categoryId": "category_apps",
                     "img": "",
                     "faIcon": "fa-solid fa-car",
-                    "faIconColors": {"bg": "#1976D2", "fill": "#FFFFFF"},
+                    "faIconColors": {
+                        "bg": "#1976D2",
+                        "fill": "#FFFFFF"
+                    },
                     "preview": {
                         "links": [
-                            {"href": "https://play.google.com/store/apps/details?id=net.imockup.fastcarwash", "tooltipString": "see_on_google_play", "faIcon": "fa-brands fa-google-play"},
-                            {"href": "https://apps.apple.com/us/app/%D8%A7%D9%84%D9%85%D8%BA%D8%B3%D9%84%D8%A9-%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%B1%D9%83%D8%A9-%D8%A7%D9%84%D9%80%D8%B1%D8%A7%D8%A6%D8%B9%D8%A9/id1503399711?ls=1", "tooltipString": "see_on_app_store", "faIcon": "fa-brands fa-apple"}
+                            {
+                                "href": "https://play.google.com/store/apps/details?id=net.imockup.fastcarwash",
+                                "tooltipString": "see_on_google_play",
+                                "faIcon": "fa-brands fa-google-play"
+                            },
+                            {
+                                "href": "https://apps.apple.com/us/app/%D8%A7%D9%84%D9%85%D8%BA%D8%B3%D9%84%D8%A9-%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%B1%D9%83%D8%A9-%D8%A7%D9%84%D9%80%D8%B1%D8%A7%D8%A6%D8%B9%D8%A9/id1503399711?ls=1",
+                                "tooltipString": "see_on_app_store",
+                                "faIcon": "fa-brands fa-apple"
+                            }
                         ],
                         "screenshots": [],
                         "screenshotsAspectRatio": "",
@@ -152,19 +132,12 @@
                         "en": {
                             "title": "Fast Car Wash App",
                             "text": "On-demand mobile car wash service connecting customers with professional cleaners at their preferred location. Implements <b>real-time appointment booking</b>, location-based services using <b>Google Maps API</b>, and <b>Firebase push notifications</b> for status updates.",
-                            "tags": ["Flutter", "Firebase", "Google Maps", "On-Demand"]
-                        },
-                        "es": {
-                            "text": "Servicio de lavado de autos móvil bajo demanda que conecta a los clientes con limpiadores profesionales en su ubicación preferida. Implementa <b>reserva de citas en tiempo real</b>, servicios basados en ubicación usando <b>Google Maps API</b>, y <b>notificaciones push de Firebase</b> para actualizaciones de estado.",
-                            "tags": ["Flutter", "Firebase", "Google Maps", "Bajo Demanda"]
-                        },
-                        "fr": {
-                            "text": "Service de lavage de voiture mobile à la demande connectant les clients avec des nettoyeurs professionnels à leur emplacement préféré. Implémente <b>la réservation de rendez-vous en temps réel</b>, les services basés sur la localisation utilisant <b>Google Maps API</b>, et <b>les notifications push Firebase</b> pour les mises à jour de statut.",
-                            "tags": ["Flutter", "Firebase", "Google Maps", "À la Demande"]
-                        },
-                        "ko": {
-                            "text": "고객을 선호하는 위치의 전문 청소업체와 연결하는 주문형 모바일 세차 서비스. <b>실시간 예약</b>, <b>Google Maps API</b>를 사용한 위치 기반 서비스, 상태 업데이트를 위한 <b>Firebase 푸시 알림</b>을 구현합니다.",
-                            "tags": ["Flutter", "Firebase", "Google Maps", "주문형"]
+                            "tags": [
+                                "Flutter",
+                                "Firebase",
+                                "Google Maps",
+                                "On-Demand"
+                            ]
                         }
                     }
                 },
@@ -173,10 +146,17 @@
                     "categoryId": "category_apps",
                     "img": "",
                     "faIcon": "fa-solid fa-flag",
-                    "faIconColors": {"bg": "#000000", "fill": "#FFFFFF"},
+                    "faIconColors": {
+                        "bg": "#000000",
+                        "fill": "#FFFFFF"
+                    },
                     "preview": {
                         "links": [
-                            {"href": "https://play.google.com/store/apps/details?id=com.palestiny.app", "tooltipString": "see_on_google_play", "faIcon": "fa-brands fa-google-play"}
+                            {
+                                "href": "https://play.google.com/store/apps/details?id=com.palestiny.app",
+                                "tooltipString": "see_on_google_play",
+                                "faIcon": "fa-brands fa-google-play"
+                            }
                         ],
                         "screenshots": [],
                         "screenshotsAspectRatio": "",
@@ -186,19 +166,12 @@
                         "en": {
                             "title": "Palestiny App",
                             "text": "Educational platform promoting Palestinian heritage through ancient history, city guides, and boycott product information. Features <b>interactive knowledge tests</b> about Palestine, multimedia content presentation, and comprehensive historical documentation using <b>Flutter</b> and <b>Provider</b>.",
-                            "tags": ["Flutter", "Provider", "Education", "Heritage"]
-                        },
-                        "es": {
-                            "text": "Plataforma educativa que promueve el patrimonio palestino a través de la historia antigua, guías de ciudades e información sobre productos de boicot. Incluye <b>pruebas de conocimiento interactivas</b> sobre Palestina, presentación de contenido multimedia y documentación histórica completa usando <b>Flutter</b> y <b>Provider</b>.",
-                            "tags": ["Flutter", "Provider", "Educación", "Patrimonio"]
-                        },
-                        "fr": {
-                            "text": "Plateforme éducative promouvant le patrimoine palestinien à travers l'histoire ancienne, les guides de villes et les informations sur les produits de boycott. Comprend <b>des tests de connaissances interactifs</b> sur la Palestine, la présentation de contenu multimédia et une documentation historique complète utilisant <b>Flutter</b> et <b>Provider</b>.",
-                            "tags": ["Flutter", "Provider", "Éducation", "Patrimoine"]
-                        },
-                        "ko": {
-                            "text": "고대 역사, 도시 가이드 및 보이콧 제품 정보를 통해 팔레스타인 유산을 홍보하는 교육 플랫폼. 팔레스타인에 대한 <b>대화형 지식 테스트</b>, 멀티미디어 콘텐츠 프레젠테이션 및 <b>Flutter</b>와 <b>Provider</b>를 사용한 포괄적인 역사 문서를 특징으로 합니다.",
-                            "tags": ["Flutter", "Provider", "교육", "유산"]
+                            "tags": [
+                                "Flutter",
+                                "Provider",
+                                "Education",
+                                "Heritage"
+                            ]
                         }
                     }
                 },
@@ -207,11 +180,22 @@
                     "categoryId": "category_apps",
                     "img": "",
                     "faIcon": "fa-solid fa-cog",
-                    "faIconColors": {"bg": "#FF6B35", "fill": "#FFFFFF"},
+                    "faIconColors": {
+                        "bg": "#FF6B35",
+                        "fill": "#FFFFFF"
+                    },
                     "preview": {
                         "links": [
-                            {"href": "https://play.google.com/store/apps/details?id=com.tashlihi.app", "tooltipString": "see_on_google_play", "faIcon": "fa-brands fa-google-play"},
-                            {"href": "https://apps.apple.com/us/app/id1637324630", "tooltipString": "see_on_app_store", "faIcon": "fa-brands fa-apple"}
+                            {
+                                "href": "https://play.google.com/store/apps/details?id=com.tashlihi.app",
+                                "tooltipString": "see_on_google_play",
+                                "faIcon": "fa-brands fa-google-play"
+                            },
+                            {
+                                "href": "https://apps.apple.com/us/app/id1637324630",
+                                "tooltipString": "see_on_app_store",
+                                "faIcon": "fa-brands fa-apple"
+                            }
                         ],
                         "screenshots": [],
                         "screenshotsAspectRatio": "",
@@ -221,19 +205,12 @@
                         "en": {
                             "title": "Tashlih App",
                             "text": "Auto parts marketplace connecting dealers and customers with city-based filtering and store location mapping. Includes <b>in-app messaging</b> for negotiations, special offers management, and detailed spare parts catalog with <b>real-time inventory updates</b>.",
-                            "tags": ["Flutter", "Marketplace", "Auto Parts", "E-commerce"]
-                        },
-                        "es": {
-                            "text": "Mercado de repuestos de automóviles que conecta a distribuidores y clientes con filtrado basado en ciudades y mapeo de ubicaciones de tiendas. Incluye <b>mensajería en la aplicación</b> para negociaciones, gestión de ofertas especiales y catálogo detallado de repuestos con <b>actualizaciones de inventario en tiempo real</b>.",
-                            "tags": ["Flutter", "Mercado", "Repuestos", "E-commerce"]
-                        },
-                        "fr": {
-                            "text": "Marché de pièces automobiles connectant les revendeurs et les clients avec filtrage par ville et cartographie des emplacements de magasins. Comprend <b>la messagerie dans l'application</b> pour les négociations, la gestion des offres spéciales et un catalogue détaillé de pièces de rechange avec <b>mises à jour d'inventaire en temps réel</b>.",
-                            "tags": ["Flutter", "Marché", "Pièces Auto", "E-commerce"]
-                        },
-                        "ko": {
-                            "text": "도시 기반 필터링 및 상점 위치 매핑으로 딜러와 고객을 연결하는 자동차 부품 마켓플레이스. 협상을 위한 <b>인앱 메시징</b>, 특별 제안 관리 및 <b>실시간 재고 업데이트</b>가 포함된 상세한 부품 카탈로그를 포함합니다.",
-                            "tags": ["Flutter", "마켓플레이스", "자동차 부품", "전자상거래"]
+                            "tags": [
+                                "Flutter",
+                                "Marketplace",
+                                "Auto Parts",
+                                "E-commerce"
+                            ]
                         }
                     }
                 },
@@ -242,11 +219,22 @@
                     "categoryId": "category_apps",
                     "img": "",
                     "faIcon": "fa-solid fa-shopping-cart",
-                    "faIconColors": {"bg": "#4CAF50", "fill": "#FFFFFF"},
+                    "faIconColors": {
+                        "bg": "#4CAF50",
+                        "fill": "#FFFFFF"
+                    },
                     "preview": {
                         "links": [
-                            {"href": "https://play.google.com/store/apps/details?id=com.ramki.app", "tooltipString": "see_on_google_play", "faIcon": "fa-brands fa-google-play"},
-                            {"href": "https://apps.apple.com/us/app/%D8%B1%D8%A7%D9%85%D9%83%D9%80%D9%80%D9%8A/id1643557084", "tooltipString": "see_on_app_store", "faIcon": "fa-brands fa-apple"}
+                            {
+                                "href": "https://play.google.com/store/apps/details?id=com.ramki.app",
+                                "tooltipString": "see_on_google_play",
+                                "faIcon": "fa-brands fa-google-play"
+                            },
+                            {
+                                "href": "https://apps.apple.com/us/app/%D8%B1%D8%A7%D9%85%D9%83%D9%80%D9%80%D9%8A/id1643557084",
+                                "tooltipString": "see_on_app_store",
+                                "faIcon": "fa-brands fa-apple"
+                            }
                         ],
                         "screenshots": [],
                         "screenshotsAspectRatio": "",
@@ -256,19 +244,12 @@
                         "en": {
                             "title": "Ramky App",
                             "text": "E-commerce platform for product browsing, order placement, and delivery tracking with dedicated customer service. Built with <b>Flutter</b> and <b>REST APIs</b>, featuring cart management, order history, and <b>real-time delivery status notifications</b>.",
-                            "tags": ["Flutter", "REST API", "E-commerce", "Delivery"]
-                        },
-                        "es": {
-                            "text": "Plataforma de comercio electrónico para navegación de productos, realización de pedidos y seguimiento de entregas con servicio al cliente dedicado. Construida con <b>Flutter</b> y <b>REST APIs</b>, con gestión de carrito, historial de pedidos y <b>notificaciones de estado de entrega en tiempo real</b>.",
-                            "tags": ["Flutter", "REST API", "E-commerce", "Entrega"]
-                        },
-                        "fr": {
-                            "text": "Plateforme de commerce électronique pour la navigation de produits, la passation de commandes et le suivi des livraisons avec service client dédié. Construite avec <b>Flutter</b> et <b>REST APIs</b>, avec gestion du panier, historique des commandes et <b>notifications de statut de livraison en temps réel</b>.",
-                            "tags": ["Flutter", "REST API", "E-commerce", "Livraison"]
-                        },
-                        "ko": {
-                            "text": "제품 탐색, 주문 배치 및 전용 고객 서비스가 있는 배송 추적을 위한 전자상거래 플랫폼. <b>Flutter</b> 및 <b>REST API</b>로 구축되었으며, 장바구니 관리, 주문 내역 및 <b>실시간 배송 상태 알림</b> 기능을 제공합니다.",
-                            "tags": ["Flutter", "REST API", "전자상거래", "배송"]
+                            "tags": [
+                                "Flutter",
+                                "REST API",
+                                "E-commerce",
+                                "Delivery"
+                            ]
                         }
                     }
                 },
@@ -277,11 +258,22 @@
                     "categoryId": "category_apps",
                     "img": "",
                     "faIcon": "fa-solid fa-gavel",
-                    "faIconColors": {"bg": "#9C27B0", "fill": "#FFFFFF"},
+                    "faIconColors": {
+                        "bg": "#9C27B0",
+                        "fill": "#FFFFFF"
+                    },
                     "preview": {
                         "links": [
-                            {"href": "https://play.google.com/store/apps/details?id=com.haraj.net", "tooltipString": "see_on_google_play", "faIcon": "fa-brands fa-google-play"},
-                            {"href": "https://apps.apple.com/us/app/%D8%AD%D8%B1%D8%A7%D8%AC-%D9%86%D8%AA/id1557898081", "tooltipString": "see_on_app_store", "faIcon": "fa-brands fa-apple"}
+                            {
+                                "href": "https://play.google.com/store/apps/details?id=com.haraj.net",
+                                "tooltipString": "see_on_google_play",
+                                "faIcon": "fa-brands fa-google-play"
+                            },
+                            {
+                                "href": "https://apps.apple.com/us/app/%D8%AD%D8%B1%D8%A7%D8%AC-%D9%86%D8%AA/id1557898081",
+                                "tooltipString": "see_on_app_store",
+                                "faIcon": "fa-brands fa-apple"
+                            }
                         ],
                         "screenshots": [],
                         "screenshotsAspectRatio": "",
@@ -291,19 +283,12 @@
                         "en": {
                             "title": "Haraj Net App",
                             "text": "Auction and marketplace platform enabling users to buy, sell, and exchange messages in real-time. Features <b>live auction participation</b>, secure user messaging system, and product listing management with <b>Firebase backend integration</b>.",
-                            "tags": ["Flutter", "Firebase", "Auction", "Marketplace"]
-                        },
-                        "es": {
-                            "text": "Plataforma de subastas y mercado que permite a los usuarios comprar, vender e intercambiar mensajes en tiempo real. Incluye <b>participación en subastas en vivo</b>, sistema de mensajería seguro para usuarios y gestión de listados de productos con <b>integración de backend Firebase</b>.",
-                            "tags": ["Flutter", "Firebase", "Subasta", "Mercado"]
-                        },
-                        "fr": {
-                            "text": "Plateforme d'enchères et de marché permettant aux utilisateurs d'acheter, vendre et échanger des messages en temps réel. Comprend <b>la participation aux enchères en direct</b>, un système de messagerie sécurisé pour les utilisateurs et la gestion des listes de produits avec <b>intégration backend Firebase</b>.",
-                            "tags": ["Flutter", "Firebase", "Enchères", "Marché"]
-                        },
-                        "ko": {
-                            "text": "사용자가 실시간으로 구매, 판매 및 메시지 교환을 할 수 있는 경매 및 마켓플레이스 플랫폼. <b>라이브 경매 참여</b>, 안전한 사용자 메시징 시스템 및 <b>Firebase 백엔드 통합</b>이 있는 제품 목록 관리를 제공합니다.",
-                            "tags": ["Flutter", "Firebase", "경매", "마켓플레이스"]
+                            "tags": [
+                                "Flutter",
+                                "Firebase",
+                                "Auction",
+                                "Marketplace"
+                            ]
                         }
                     }
                 },
@@ -312,10 +297,17 @@
                     "categoryId": "category_apps",
                     "img": "",
                     "faIcon": "fa-solid fa-language",
-                    "faIconColors": {"bg": "#F57C00", "fill": "#FFFFFF"},
+                    "faIconColors": {
+                        "bg": "#F57C00",
+                        "fill": "#FFFFFF"
+                    },
                     "preview": {
                         "links": [
-                            {"href": "https://play.google.com/store/apps/details?id=com.logaty.app", "tooltipString": "see_on_google_play", "faIcon": "fa-brands fa-google-play"}
+                            {
+                                "href": "https://play.google.com/store/apps/details?id=com.logaty.app",
+                                "tooltipString": "see_on_google_play",
+                                "faIcon": "fa-brands fa-google-play"
+                            }
                         ],
                         "screenshots": [],
                         "screenshotsAspectRatio": "",
@@ -325,19 +317,12 @@
                         "en": {
                             "title": "Aktashaf Ser Logaty App",
                             "text": "Arabic language learning application offering video-based lessons and interactive chat rooms for student-teacher communication. Implements <b>video streaming</b>, real-time messaging, and <b>progress tracking</b> to facilitate effective language education.",
-                            "tags": ["Flutter", "Education", "Language Learning", "Video Streaming"]
-                        },
-                        "es": {
-                            "text": "Aplicación de aprendizaje del idioma árabe que ofrece lecciones basadas en video y salas de chat interactivas para la comunicación entre estudiantes y profesores. Implementa <b>transmisión de video</b>, mensajería en tiempo real y <b>seguimiento de progreso</b> para facilitar una educación lingüística efectiva.",
-                            "tags": ["Flutter", "Educación", "Aprendizaje de Idiomas", "Video Streaming"]
-                        },
-                        "fr": {
-                            "text": "Application d'apprentissage de la langue arabe offrant des leçons basées sur la vidéo et des salles de chat interactives pour la communication entre étudiants et enseignants. Implémente <b>la diffusion vidéo</b>, la messagerie en temps réel et <b>le suivi des progrès</b> pour faciliter une éducation linguistique efficace.",
-                            "tags": ["Flutter", "Éducation", "Apprentissage des Langues", "Diffusion Vidéo"]
-                        },
-                        "ko": {
-                            "text": "비디오 기반 수업과 학생-교사 소통을 위한 대화형 채팅방을 제공하는 아랍어 학습 애플리케이션. 효과적인 언어 교육을 위해 <b>비디오 스트리밍</b>, 실시간 메시징 및 <b>진행 상황 추적</b>을 구현합니다.",
-                            "tags": ["Flutter", "교육", "언어 학습", "비디오 스트리밍"]
+                            "tags": [
+                                "Flutter",
+                                "Education",
+                                "Language Learning",
+                                "Video Streaming"
+                            ]
                         }
                     }
                 },
@@ -346,11 +331,22 @@
                     "categoryId": "category_apps",
                     "img": "",
                     "faIcon": "fa-solid fa-calendar-check",
-                    "faIconColors": {"bg": "#E91E63", "fill": "#FFFFFF"},
+                    "faIconColors": {
+                        "bg": "#E91E63",
+                        "fill": "#FFFFFF"
+                    },
                     "preview": {
                         "links": [
-                            {"href": "https://play.google.com/store/apps/details?id=com.hujuzat.app", "tooltipString": "see_on_google_play", "faIcon": "fa-brands fa-google-play"},
-                            {"href": "https://apps.apple.com/us/app/%D8%AD%D8%AC%D9%88%D8%B2%D8%A7%D8%AA/id6742800474", "tooltipString": "see_on_app_store", "faIcon": "fa-brands fa-apple"}
+                            {
+                                "href": "https://play.google.com/store/apps/details?id=com.hujuzat.app",
+                                "tooltipString": "see_on_google_play",
+                                "faIcon": "fa-brands fa-google-play"
+                            },
+                            {
+                                "href": "https://apps.apple.com/us/app/%D8%AD%D8%AC%D9%88%D8%B2%D8%A7%D8%AA/id6742800474",
+                                "tooltipString": "see_on_app_store",
+                                "faIcon": "fa-brands fa-apple"
+                            }
                         ],
                         "screenshots": [],
                         "screenshotsAspectRatio": "",
@@ -360,19 +356,12 @@
                         "en": {
                             "title": "Hujuzat (Beta)",
                             "text": "Versatile reservation platform for booking appointments across restaurants, barbershops, and entertainment venues based on geographical location. Built using <b>Clean Architecture</b> and <b>Bloc</b> for scalability, featuring <b>real-time availability checking</b> and multi-business category support.",
-                            "tags": ["Flutter", "Clean Architecture", "Bloc", "Reservations"]
-                        },
-                        "es": {
-                            "text": "Plataforma de reservas versátil para reservar citas en restaurantes, barberías y lugares de entretenimiento según la ubicación geográfica. Construida usando <b>Arquitectura Limpia</b> y <b>Bloc</b> para escalabilidad, con <b>verificación de disponibilidad en tiempo real</b> y soporte para múltiples categorías de negocios.",
-                            "tags": ["Flutter", "Arquitectura Limpia", "Bloc", "Reservas"]
-                        },
-                        "fr": {
-                            "text": "Plateforme de réservation polyvalente pour réserver des rendez-vous dans les restaurants, salons de coiffure et lieux de divertissement en fonction de l'emplacement géographique. Construite en utilisant <b>Clean Architecture</b> et <b>Bloc</b> pour l'évolutivité, avec <b>vérification de disponibilité en temps réel</b> et support multi-catégories d'entreprises.",
-                            "tags": ["Flutter", "Clean Architecture", "Bloc", "Réservations"]
-                        },
-                        "ko": {
-                            "text": "지리적 위치를 기반으로 레스토랑, 이발소 및 엔터테인먼트 장소에서 약속을 예약하는 다목적 예약 플랫폼. 확장성을 위해 <b>Clean Architecture</b> 및 <b>Bloc</b>을 사용하여 구축되었으며, <b>실시간 가용성 확인</b> 및 다중 비즈니스 카테고리 지원을 제공합니다.",
-                            "tags": ["Flutter", "Clean Architecture", "Bloc", "예약"]
+                            "tags": [
+                                "Flutter",
+                                "Clean Architecture",
+                                "Bloc",
+                                "Reservations"
+                            ]
                         }
                     }
                 },
@@ -381,11 +370,22 @@
                     "categoryId": "category_apps",
                     "img": "",
                     "faIcon": "fa-solid fa-briefcase",
-                    "faIconColors": {"bg": "#607D8B", "fill": "#FFFFFF"},
+                    "faIconColors": {
+                        "bg": "#607D8B",
+                        "fill": "#FFFFFF"
+                    },
                     "preview": {
                         "links": [
-                            {"href": "https://play.google.com/store/apps/details?id=com.hujuzatadmin.app", "tooltipString": "see_on_google_play", "faIcon": "fa-brands fa-google-play"},
-                            {"href": "https://apps.apple.com/us/app/%D8%AD%D8%AC%D9%88%D8%B2%D8%A7%D8%AA-%D8%A8%D8%B1%D9%88/id6742800356", "tooltipString": "see_on_app_store", "faIcon": "fa-brands fa-apple"}
+                            {
+                                "href": "https://play.google.com/store/apps/details?id=com.hujuzatadmin.app",
+                                "tooltipString": "see_on_google_play",
+                                "faIcon": "fa-brands fa-google-play"
+                            },
+                            {
+                                "href": "https://apps.apple.com/us/app/%D8%AD%D8%AC%D9%88%D8%B2%D8%A7%D8%AA-%D8%A8%D8%B1%D9%88/id6742800356",
+                                "tooltipString": "see_on_app_store",
+                                "faIcon": "fa-brands fa-apple"
+                            }
                         ],
                         "screenshots": [],
                         "screenshotsAspectRatio": "",
@@ -395,19 +395,12 @@
                         "en": {
                             "title": "Hujuzat Pro (Beta)",
                             "text": "Business management companion enabling store owners to register establishments, manage working hours, and handle employee details. Features <b>comprehensive reservation dashboard</b>, analytics for business insights, and seamless integration with the customer-facing Hujuzat app.",
-                            "tags": ["Flutter", "Business Management", "Analytics", "Dashboard"]
-                        },
-                        "es": {
-                            "text": "Compañero de gestión empresarial que permite a los propietarios de tiendas registrar establecimientos, gestionar horarios de trabajo y manejar detalles de empleados. Incluye <b>panel de reservas completo</b>, análisis para información empresarial e integración perfecta con la aplicación Hujuzat orientada al cliente.",
-                            "tags": ["Flutter", "Gestión Empresarial", "Análisis", "Panel"]
-                        },
-                        "fr": {
-                            "text": "Compagnon de gestion d'entreprise permettant aux propriétaires de magasins d'enregistrer des établissements, de gérer les heures de travail et de gérer les détails des employés. Comprend <b>un tableau de bord de réservation complet</b>, des analyses pour les informations commerciales et une intégration transparente avec l'application Hujuzat orientée client.",
-                            "tags": ["Flutter", "Gestion d'Entreprise", "Analyses", "Tableau de Bord"]
-                        },
-                        "ko": {
-                            "text": "상점 소유자가 시설을 등록하고, 근무 시간을 관리하며, 직원 세부 정보를 처리할 수 있도록 하는 비즈니스 관리 동반자. <b>포괄적인 예약 대시보드</b>, 비즈니스 인사이트를 위한 분석 및 고객 중심 Hujuzat 앱과의 원활한 통합을 제공합니다.",
-                            "tags": ["Flutter", "비즈니스 관리", "분석", "대시보드"]
+                            "tags": [
+                                "Flutter",
+                                "Business Management",
+                                "Analytics",
+                                "Dashboard"
+                            ]
                         }
                     }
                 },
@@ -416,10 +409,17 @@
                     "categoryId": "category_apps",
                     "img": "",
                     "faIcon": "fa-solid fa-brain",
-                    "faIconColors": {"bg": "#FF9800", "fill": "#FFFFFF"},
+                    "faIconColors": {
+                        "bg": "#FF9800",
+                        "fill": "#FFFFFF"
+                    },
                     "preview": {
                         "links": [
-                            {"href": "https://play.google.com/store/apps/details?id=com.fekrapp.app", "tooltipString": "see_on_google_play", "faIcon": "fa-brands fa-google-play"}
+                            {
+                                "href": "https://play.google.com/store/apps/details?id=com.fekrapp.app",
+                                "tooltipString": "see_on_google_play",
+                                "faIcon": "fa-brands fa-google-play"
+                            }
                         ],
                         "screenshots": [],
                         "screenshotsAspectRatio": "",
@@ -429,19 +429,12 @@
                         "en": {
                             "title": "Fekr (Beta)",
                             "text": "Interactive multiplayer trivia game where players challenge friends or random opponents across diverse knowledge categories. Implements <b>Firebase Realtime Database</b> for live gameplay, coin-based reward system, achievement unlocking, and <b>competitive leaderboards</b>.",
-                            "tags": ["Flutter", "Firebase", "Gaming", "Multiplayer"]
-                        },
-                        "es": {
-                            "text": "Juego de trivia multijugador interactivo donde los jugadores desafían a amigos u oponentes aleatorios en diversas categorías de conocimiento. Implementa <b>Firebase Realtime Database</b> para juego en vivo, sistema de recompensas basado en monedas, desbloqueo de logros y <b>tablas de clasificación competitivas</b>.",
-                            "tags": ["Flutter", "Firebase", "Juegos", "Multijugador"]
-                        },
-                        "fr": {
-                            "text": "Jeu de trivia multijoueur interactif où les joueurs défient des amis ou des adversaires aléatoires dans diverses catégories de connaissances. Implémente <b>Firebase Realtime Database</b> pour le gameplay en direct, système de récompenses basé sur les pièces, déverrouillage d'achievements et <b>classements compétitifs</b>.",
-                            "tags": ["Flutter", "Firebase", "Jeux", "Multijoueur"]
-                        },
-                        "ko": {
-                            "text": "플레이어가 다양한 지식 카테고리에서 친구나 무작위 상대에게 도전하는 대화형 멀티플레이어 퀴즈 게임. 라이브 게임플레이를 위한 <b>Firebase Realtime Database</b>, 코인 기반 보상 시스템, 업적 잠금 해제 및 <b>경쟁 리더보드</b>를 구현합니다.",
-                            "tags": ["Flutter", "Firebase", "게임", "멀티플레이어"]
+                            "tags": [
+                                "Flutter",
+                                "Firebase",
+                                "Gaming",
+                                "Multiplayer"
+                            ]
                         }
                     }
                 },
@@ -450,11 +443,22 @@
                     "categoryId": "category_apps",
                     "img": "",
                     "faIcon": "fa-solid fa-dumbbell",
-                    "faIconColors": {"bg": "#D32F2F", "fill": "#FFFFFF"},
+                    "faIconColors": {
+                        "bg": "#D32F2F",
+                        "fill": "#FFFFFF"
+                    },
                     "preview": {
                         "links": [
-                            {"href": "https://play.google.com/store/apps/details?id=com.manaret.app", "tooltipString": "see_on_google_play", "faIcon": "fa-brands fa-google-play"},
-                            {"href": "https://apps.apple.com/us/app/manaretgym/id6744279634", "tooltipString": "see_on_app_store", "faIcon": "fa-brands fa-apple"}
+                            {
+                                "href": "https://play.google.com/store/apps/details?id=com.manaret.app",
+                                "tooltipString": "see_on_google_play",
+                                "faIcon": "fa-brands fa-google-play"
+                            },
+                            {
+                                "href": "https://apps.apple.com/us/app/manaretgym/id6744279634",
+                                "tooltipString": "see_on_app_store",
+                                "faIcon": "fa-brands fa-apple"
+                            }
                         ],
                         "screenshots": [],
                         "screenshotsAspectRatio": "",
@@ -464,19 +468,12 @@
                         "en": {
                             "title": "ManaretGYM (Beta)",
                             "text": "Fitness management app allowing users to book gym classes, track workout sessions, and communicate with personal trainers. Features <b>class scheduling</b> with capacity management, session history tracking, and <b>direct messaging system</b> for trainer consultation.",
-                            "tags": ["Flutter", "Fitness", "Gym Management", "Health"]
-                        },
-                        "es": {
-                            "text": "Aplicación de gestión de fitness que permite a los usuarios reservar clases de gimnasio, rastrear sesiones de entrenamiento y comunicarse con entrenadores personales. Incluye <b>programación de clases</b> con gestión de capacidad, seguimiento del historial de sesiones y <b>sistema de mensajería directa</b> para consultas con entrenadores.",
-                            "tags": ["Flutter", "Fitness", "Gestión de Gimnasio", "Salud"]
-                        },
-                        "fr": {
-                            "text": "Application de gestion de fitness permettant aux utilisateurs de réserver des cours de gym, de suivre les séances d'entraînement et de communiquer avec les entraîneurs personnels. Comprend <b>la planification des cours</b> avec gestion de la capacité, suivi de l'historique des séances et <b>système de messagerie directe</b> pour consultation avec les entraîneurs.",
-                            "tags": ["Flutter", "Fitness", "Gestion de Gym", "Santé"]
-                        },
-                        "ko": {
-                            "text": "사용자가 체육관 수업을 예약하고, 운동 세션을 추적하며, 개인 트레이너와 소통할 수 있는 피트니스 관리 앱. 용량 관리가 있는 <b>수업 일정</b>, 세션 기록 추적 및 트레이너 상담을 위한 <b>직접 메시징 시스템</b>을 제공합니다.",
-                            "tags": ["Flutter", "피트니스", "체육관 관리", "건강"]
+                            "tags": [
+                                "Flutter",
+                                "Fitness",
+                                "Gym Management",
+                                "Health"
+                            ]
                         }
                     }
                 },
@@ -485,10 +482,17 @@
                     "categoryId": "category_apps",
                     "img": "",
                     "faIcon": "fa-solid fa-dollar-sign",
-                    "faIconColors": {"bg": "#00BCD4", "fill": "#FFFFFF"},
+                    "faIconColors": {
+                        "bg": "#00BCD4",
+                        "fill": "#FFFFFF"
+                    },
                     "preview": {
                         "links": [
-                            {"href": "https://play.google.com/store/apps/details?id=we.co.app", "tooltipString": "see_on_google_play", "faIcon": "fa-brands fa-google-play"}
+                            {
+                                "href": "https://play.google.com/store/apps/details?id=we.co.app",
+                                "tooltipString": "see_on_google_play",
+                                "faIcon": "fa-brands fa-google-play"
+                            }
                         ],
                         "screenshots": [],
                         "screenshotsAspectRatio": "",
@@ -498,19 +502,12 @@
                         "en": {
                             "title": "We.CO (Beta)",
                             "text": "Global currency converter providing instant exchange rate calculations with real-time data across multiple currencies worldwide. Features <b>historical exchange rate charts</b>, favorite currency tracking, and <b>offline caching</b> for travelers and traders, built with <b>Flutter</b> and <b>REST API integration</b> for accurate financial data.",
-                            "tags": ["Flutter", "REST API", "Currency", "Finance"]
-                        },
-                        "es": {
-                            "text": "Convertidor de moneda global que proporciona cálculos instantáneos de tipos de cambio con datos en tiempo real en múltiples monedas de todo el mundo. Incluye <b>gráficos históricos de tipos de cambio</b>, seguimiento de monedas favoritas y <b>almacenamiento en caché sin conexión</b> para viajeros y comerciantes, construido con <b>Flutter</b> e <b>integración REST API</b> para datos financieros precisos.",
-                            "tags": ["Flutter", "REST API", "Moneda", "Finanzas"]
-                        },
-                        "fr": {
-                            "text": "Convertisseur de devises mondial fournissant des calculs instantanés de taux de change avec des données en temps réel sur plusieurs devises dans le monde. Comprend <b>des graphiques de taux de change historiques</b>, le suivi des devises favorites et <b>la mise en cache hors ligne</b> pour les voyageurs et les traders, construit avec <b>Flutter</b> et <b>intégration REST API</b> pour des données financières précises.",
-                            "tags": ["Flutter", "REST API", "Devise", "Finance"]
-                        },
-                        "ko": {
-                            "text": "전 세계 여러 통화에 걸쳐 실시간 데이터로 즉각적인 환율 계산을 제공하는 글로벌 통화 변환기. <b>역사적 환율 차트</b>, 즐겨찾기 통화 추적 및 여행자와 거래자를 위한 <b>오프라인 캐싱</b> 기능을 제공하며, 정확한 금융 데이터를 위해 <b>Flutter</b> 및 <b>REST API 통합</b>으로 구축되었습니다.",
-                            "tags": ["Flutter", "REST API", "통화", "금융"]
+                            "tags": [
+                                "Flutter",
+                                "REST API",
+                                "Currency",
+                                "Finance"
+                            ]
                         }
                     }
                 }
