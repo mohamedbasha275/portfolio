@@ -1,0 +1,517 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Projects",
+                "title_short_nav": "Projects",
+                "title_long_prefix": "Take a look at",
+                "title_long": "My {{Projects}}"
+            }
+        }
+    },
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticlePortfolio",
+            "locales": {
+                "en": {
+                    "category_all": "All",
+                    "category_apps": "Apps",
+                    "category_web": "Web",
+                    "category_utilities": "Utilities"
+                }
+            },
+            "settings": {
+                "categorize_by": [
+                    "category_apps"
+                ],
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "categoryId": "category_apps",
+                    "img": "",
+                    "faIcon": "fa-solid fa-book-quran",
+                    "faIconColors": {
+                        "bg": "#2E7D32",
+                        "fill": "#FFFFFF"
+                    },
+                    "preview": {
+                        "links": [
+                            {
+                                "href": "https://play.google.com/store/apps/details?id=net.quran.holly",
+                                "tooltipString": "see_on_google_play",
+                                "faIcon": "fa-brands fa-google-play"
+                            }
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Holly Quran App",
+                            "text": "Comprehensive Islamic application featuring the complete Quran with interpretations, daily supplications, Fortress of the Muslim, and Prophet's biography. Built with <b>Flutter</b> and <b>SQLite</b> for offline-first experience, implementing bookmarking and advanced search functionality across Islamic content.",
+                            "tags": [
+                                "Flutter",
+                                "SQLite",
+                                "Islamic",
+                                "Quran"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "categoryId": "category_apps",
+                    "img": "",
+                    "faIcon": "fa-solid fa-book",
+                    "faIconColors": {
+                        "bg": "#8B4513",
+                        "fill": "#FFFFFF"
+                    },
+                    "preview": {
+                        "links": [
+                            {
+                                "href": "https://play.google.com/store/apps/details?id=com.dawawin.app",
+                                "tooltipString": "see_on_google_play",
+                                "faIcon": "fa-brands fa-google-play"
+                            },
+                            {
+                                "href": "https://apps.apple.com/us/app/%D8%AF%D9%88%D8%A7%D9%88%D9%8A%D9%86/id6476870397",
+                                "tooltipString": "see_on_app_store",
+                                "faIcon": "fa-brands fa-apple"
+                            }
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Dawawin",
+                            "text": "Poetry learning platform showcasing Arabic poems across all literary eras with interactive memorization system. Features word-by-word deletion challenges and progressive testing from individual words to complete verses, helping users memorize poems efficiently using <b>Flutter</b> and <b>Hive</b>.",
+                            "tags": [
+                                "Flutter",
+                                "Hive",
+                                "Poetry",
+                                "Education"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "categoryId": "category_apps",
+                    "img": "",
+                    "faIcon": "fa-solid fa-car",
+                    "faIconColors": {
+                        "bg": "#1976D2",
+                        "fill": "#FFFFFF"
+                    },
+                    "preview": {
+                        "links": [
+                            {
+                                "href": "https://play.google.com/store/apps/details?id=net.imockup.fastcarwash",
+                                "tooltipString": "see_on_google_play",
+                                "faIcon": "fa-brands fa-google-play"
+                            },
+                            {
+                                "href": "https://apps.apple.com/us/app/%D8%A7%D9%84%D9%85%D8%BA%D8%B3%D9%84%D8%A9-%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%B1%D9%83%D8%A9-%D8%A7%D9%84%D9%80%D8%B1%D8%A7%D8%A6%D8%B9%D8%A9/id1503399711?ls=1",
+                                "tooltipString": "see_on_app_store",
+                                "faIcon": "fa-brands fa-apple"
+                            }
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Fast Car Wash App",
+                            "text": "On-demand mobile car wash service connecting customers with professional cleaners at their preferred location. Implements <b>real-time appointment booking</b>, location-based services using <b>Google Maps API</b>, and <b>Firebase push notifications</b> for status updates.",
+                            "tags": [
+                                "Flutter",
+                                "Firebase",
+                                "Google Maps",
+                                "On-Demand"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "categoryId": "category_apps",
+                    "img": "",
+                    "faIcon": "fa-solid fa-flag",
+                    "faIconColors": {
+                        "bg": "#000000",
+                        "fill": "#FFFFFF"
+                    },
+                    "preview": {
+                        "links": [
+                            {
+                                "href": "https://play.google.com/store/apps/details?id=com.palestiny.app",
+                                "tooltipString": "see_on_google_play",
+                                "faIcon": "fa-brands fa-google-play"
+                            }
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Palestiny App",
+                            "text": "Educational platform promoting Palestinian heritage through ancient history, city guides, and boycott product information. Features <b>interactive knowledge tests</b> about Palestine, multimedia content presentation, and comprehensive historical documentation using <b>Flutter</b> and <b>Provider</b>.",
+                            "tags": [
+                                "Flutter",
+                                "Provider",
+                                "Education",
+                                "Heritage"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "id": 5,
+                    "categoryId": "category_apps",
+                    "img": "",
+                    "faIcon": "fa-solid fa-cog",
+                    "faIconColors": {
+                        "bg": "#FF6B35",
+                        "fill": "#FFFFFF"
+                    },
+                    "preview": {
+                        "links": [
+                            {
+                                "href": "https://play.google.com/store/apps/details?id=com.tashlihi.app",
+                                "tooltipString": "see_on_google_play",
+                                "faIcon": "fa-brands fa-google-play"
+                            },
+                            {
+                                "href": "https://apps.apple.com/us/app/id1637324630",
+                                "tooltipString": "see_on_app_store",
+                                "faIcon": "fa-brands fa-apple"
+                            }
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Tashlih App",
+                            "text": "Auto parts marketplace connecting dealers and customers with city-based filtering and store location mapping. Includes <b>in-app messaging</b> for negotiations, special offers management, and detailed spare parts catalog with <b>real-time inventory updates</b>.",
+                            "tags": [
+                                "Flutter",
+                                "Marketplace",
+                                "Auto Parts",
+                                "E-commerce"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "id": 6,
+                    "categoryId": "category_apps",
+                    "img": "",
+                    "faIcon": "fa-solid fa-shopping-cart",
+                    "faIconColors": {
+                        "bg": "#4CAF50",
+                        "fill": "#FFFFFF"
+                    },
+                    "preview": {
+                        "links": [
+                            {
+                                "href": "https://play.google.com/store/apps/details?id=com.ramki.app",
+                                "tooltipString": "see_on_google_play",
+                                "faIcon": "fa-brands fa-google-play"
+                            },
+                            {
+                                "href": "https://apps.apple.com/us/app/%D8%B1%D8%A7%D9%85%D9%83%D9%80%D9%80%D9%8A/id1643557084",
+                                "tooltipString": "see_on_app_store",
+                                "faIcon": "fa-brands fa-apple"
+                            }
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Ramky App",
+                            "text": "E-commerce platform for product browsing, order placement, and delivery tracking with dedicated customer service. Built with <b>Flutter</b> and <b>REST APIs</b>, featuring cart management, order history, and <b>real-time delivery status notifications</b>.",
+                            "tags": [
+                                "Flutter",
+                                "REST API",
+                                "E-commerce",
+                                "Delivery"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "id": 7,
+                    "categoryId": "category_apps",
+                    "img": "",
+                    "faIcon": "fa-solid fa-gavel",
+                    "faIconColors": {
+                        "bg": "#9C27B0",
+                        "fill": "#FFFFFF"
+                    },
+                    "preview": {
+                        "links": [
+                            {
+                                "href": "https://play.google.com/store/apps/details?id=com.haraj.net",
+                                "tooltipString": "see_on_google_play",
+                                "faIcon": "fa-brands fa-google-play"
+                            },
+                            {
+                                "href": "https://apps.apple.com/us/app/%D8%AD%D8%B1%D8%A7%D8%AC-%D9%86%D8%AA/id1557898081",
+                                "tooltipString": "see_on_app_store",
+                                "faIcon": "fa-brands fa-apple"
+                            }
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Haraj Net App",
+                            "text": "Auction and marketplace platform enabling users to buy, sell, and exchange messages in real-time. Features <b>live auction participation</b>, secure user messaging system, and product listing management with <b>Firebase backend integration</b>.",
+                            "tags": [
+                                "Flutter",
+                                "Firebase",
+                                "Auction",
+                                "Marketplace"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "id": 8,
+                    "categoryId": "category_apps",
+                    "img": "",
+                    "faIcon": "fa-solid fa-language",
+                    "faIconColors": {
+                        "bg": "#F57C00",
+                        "fill": "#FFFFFF"
+                    },
+                    "preview": {
+                        "links": [
+                            {
+                                "href": "https://play.google.com/store/apps/details?id=com.logaty.app",
+                                "tooltipString": "see_on_google_play",
+                                "faIcon": "fa-brands fa-google-play"
+                            }
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Aktashaf Ser Logaty App",
+                            "text": "Arabic language learning application offering video-based lessons and interactive chat rooms for student-teacher communication. Implements <b>video streaming</b>, real-time messaging, and <b>progress tracking</b> to facilitate effective language education.",
+                            "tags": [
+                                "Flutter",
+                                "Education",
+                                "Language Learning",
+                                "Video Streaming"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "id": 9,
+                    "categoryId": "category_apps",
+                    "img": "",
+                    "faIcon": "fa-solid fa-calendar-check",
+                    "faIconColors": {
+                        "bg": "#E91E63",
+                        "fill": "#FFFFFF"
+                    },
+                    "preview": {
+                        "links": [
+                            {
+                                "href": "https://play.google.com/store/apps/details?id=com.hujuzat.app",
+                                "tooltipString": "see_on_google_play",
+                                "faIcon": "fa-brands fa-google-play"
+                            },
+                            {
+                                "href": "https://apps.apple.com/us/app/%D8%AD%D8%AC%D9%88%D8%B2%D8%A7%D8%AA/id6742800474",
+                                "tooltipString": "see_on_app_store",
+                                "faIcon": "fa-brands fa-apple"
+                            }
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Hujuzat (Beta)",
+                            "text": "Versatile reservation platform for booking appointments across restaurants, barbershops, and entertainment venues based on geographical location. Built using <b>Clean Architecture</b> and <b>Bloc</b> for scalability, featuring <b>real-time availability checking</b> and multi-business category support.",
+                            "tags": [
+                                "Flutter",
+                                "Clean Architecture",
+                                "Bloc",
+                                "Reservations"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "id": 10,
+                    "categoryId": "category_apps",
+                    "img": "",
+                    "faIcon": "fa-solid fa-briefcase",
+                    "faIconColors": {
+                        "bg": "#607D8B",
+                        "fill": "#FFFFFF"
+                    },
+                    "preview": {
+                        "links": [
+                            {
+                                "href": "https://play.google.com/store/apps/details?id=com.hujuzatadmin.app",
+                                "tooltipString": "see_on_google_play",
+                                "faIcon": "fa-brands fa-google-play"
+                            },
+                            {
+                                "href": "https://apps.apple.com/us/app/%D8%AD%D8%AC%D9%88%D8%B2%D8%A7%D8%AA-%D8%A8%D8%B1%D9%88/id6742800356",
+                                "tooltipString": "see_on_app_store",
+                                "faIcon": "fa-brands fa-apple"
+                            }
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Hujuzat Pro (Beta)",
+                            "text": "Business management companion enabling store owners to register establishments, manage working hours, and handle employee details. Features <b>comprehensive reservation dashboard</b>, analytics for business insights, and seamless integration with the customer-facing Hujuzat app.",
+                            "tags": [
+                                "Flutter",
+                                "Business Management",
+                                "Analytics",
+                                "Dashboard"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "id": 11,
+                    "categoryId": "category_apps",
+                    "img": "",
+                    "faIcon": "fa-solid fa-brain",
+                    "faIconColors": {
+                        "bg": "#FF9800",
+                        "fill": "#FFFFFF"
+                    },
+                    "preview": {
+                        "links": [
+                            {
+                                "href": "https://play.google.com/store/apps/details?id=com.fekrapp.app",
+                                "tooltipString": "see_on_google_play",
+                                "faIcon": "fa-brands fa-google-play"
+                            }
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Fekr (Beta)",
+                            "text": "Interactive multiplayer trivia game where players challenge friends or random opponents across diverse knowledge categories. Implements <b>Firebase Realtime Database</b> for live gameplay, coin-based reward system, achievement unlocking, and <b>competitive leaderboards</b>.",
+                            "tags": [
+                                "Flutter",
+                                "Firebase",
+                                "Gaming",
+                                "Multiplayer"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "id": 12,
+                    "categoryId": "category_apps",
+                    "img": "",
+                    "faIcon": "fa-solid fa-dumbbell",
+                    "faIconColors": {
+                        "bg": "#D32F2F",
+                        "fill": "#FFFFFF"
+                    },
+                    "preview": {
+                        "links": [
+                            {
+                                "href": "https://play.google.com/store/apps/details?id=com.manaret.app",
+                                "tooltipString": "see_on_google_play",
+                                "faIcon": "fa-brands fa-google-play"
+                            },
+                            {
+                                "href": "https://apps.apple.com/us/app/manaretgym/id6744279634",
+                                "tooltipString": "see_on_app_store",
+                                "faIcon": "fa-brands fa-apple"
+                            }
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "ManaretGYM (Beta)",
+                            "text": "Fitness management app allowing users to book gym classes, track workout sessions, and communicate with personal trainers. Features <b>class scheduling</b> with capacity management, session history tracking, and <b>direct messaging system</b> for trainer consultation.",
+                            "tags": [
+                                "Flutter",
+                                "Fitness",
+                                "Gym Management",
+                                "Health"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "id": 13,
+                    "categoryId": "category_apps",
+                    "img": "",
+                    "faIcon": "fa-solid fa-dollar-sign",
+                    "faIconColors": {
+                        "bg": "#00BCD4",
+                        "fill": "#FFFFFF"
+                    },
+                    "preview": {
+                        "links": [
+                            {
+                                "href": "https://play.google.com/store/apps/details?id=we.co.app",
+                                "tooltipString": "see_on_google_play",
+                                "faIcon": "fa-brands fa-google-play"
+                            }
+                        ],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "We.CO (Beta)",
+                            "text": "Global currency converter providing instant exchange rate calculations with real-time data across multiple currencies worldwide. Features <b>historical exchange rate charts</b>, favorite currency tracking, and <b>offline caching</b> for travelers and traders, built with <b>Flutter</b> and <b>REST API integration</b> for accurate financial data.",
+                            "tags": [
+                                "Flutter",
+                                "REST API",
+                                "Currency",
+                                "Finance"
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

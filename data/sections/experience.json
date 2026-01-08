@@ -1,0 +1,155 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Experience",
+                "title_short_nav": "Experience",
+                "title_long_prefix": "Summary of my",
+                "title_long": "{{Work}} Experience"
+            }
+        }
+    },
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleTimeline",
+            "locales": {
+                "en": {}
+            },
+            "settings": {
+                "order_items_by": "dateStart",
+                "order_items_sort": "desc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "",
+                    "faIcon": "fa-solid fa-building",
+                    "faIconColors": {
+                        "bg": "",
+                        "fill": ""
+                    },
+                    "dateStart": {
+                        "year": 2023,
+                        "month": 5
+                    },
+                    "dateEnd": {
+                        "now": true
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "{{Senior Mobile Application}} Developer",
+                            "province": "Dubai",
+                            "country": "UAE",
+                            "institution": "KBT",
+                            "text": "Architected and delivered [[5+ enterprise-grade Flutter applications]] for UAE-based clients, serving 50K+ active users. Implemented Clean Architecture with Bloc pattern, improving code maintainability and reducing bug resolution time by 35%.",
+                            "list": [
+                                "Architected and delivered 5+ enterprise-grade Flutter applications for UAE-based clients, serving 50K+ active users",
+                                "Implemented Clean Architecture with Bloc pattern, improving code maintainability and reducing bug resolution time by 35%",
+                                "Integrated Firebase ecosystem (Authentication, Firestore, Cloud Messaging, Crashlytics) achieving 99.5% crash-free rate",
+                                "Developed multi-language support (Arabic/English) with RTL layout handling for enhanced user experience",
+                                "Built deep linking and App Links functionality, increasing user retention by 20%",
+                                "Collaborated with cross-functional teams using Agile methodologies to deliver features on schedule"
+                            ],
+                            "tags": [
+                                "Flutter",
+                                "Dart",
+                                "Clean Architecture",
+                                "Bloc/Cubit",
+                                "Firebase",
+                                "REST APIs",
+                                "Git"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": "",
+                    "faIcon": "fa-solid fa-laptop-code",
+                    "faIconColors": {
+                        "bg": "",
+                        "fill": ""
+                    },
+                    "dateStart": {
+                        "year": 2021,
+                        "month": 8
+                    },
+                    "dateEnd": {
+                        "now": true
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "{{Mobile Application}} Developer",
+                            "province": "",
+                            "country": "Remote",
+                            "institution": "Self-Employed",
+                            "text": "Published [[10+ Flutter applications]] to Google Play Store and Apple App Store with 100K+ combined downloads. Specialized in offline-first architecture using Hive and Isar, enabling seamless performance for large datasets (10K+ records).",
+                            "list": [
+                                "Published 10+ Flutter applications to Google Play Store and Apple App Store with 100K+ combined downloads",
+                                "Specialized in offline-first architecture using Hive and Isar, enabling seamless performance for large datasets (10K+ records)",
+                                "Integrated multiple payment gateways (Stripe, PayPal, local payment solutions) with secure transaction handling",
+                                "Optimized app performance for high-traffic scenarios, reducing load time by 40% and improving user experience",
+                                "Implemented comprehensive testing strategies (Unit, Widget, Integration tests) achieving 85%+ code coverage",
+                                "Managed full development lifecycle: requirements gathering, design, development, testing, deployment, and maintenance"
+                            ],
+                            "tags": [
+                                "Flutter",
+                                "Hive",
+                                "Isar",
+                                "Payment Integration",
+                                "CI/CD",
+                                "GitHub Actions",
+                                "Firebase"
+                            ]
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "img": "",
+                    "faIcon": "fa-solid fa-mobile-screen-button",
+                    "faIconColors": {
+                        "bg": "",
+                        "fill": ""
+                    },
+                    "dateStart": {
+                        "year": 2020,
+                        "month": 1
+                    },
+                    "dateEnd": {
+                        "year": 2023,
+                        "month": 5
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "{{Mobile Application}} Developer",
+                            "province": "Qena",
+                            "country": "Egypt",
+                            "institution": "AppCubes",
+                            "text": "Built and maintained [[8+ hybrid mobile applications]] using Flutter and Cordova for diverse business domains. Integrated complex RESTful APIs and third-party services, handling 1000+ daily API requests efficiently.",
+                            "list": [
+                                "Built and maintained 8+ hybrid mobile applications using Flutter and Cordova for diverse business domains",
+                                "Integrated complex RESTful APIs and third-party services, handling 1000+ daily API requests efficiently",
+                                "Optimized application performance through code refactoring and lazy loading, reducing app crashes by 25%",
+                                "Implemented robust error handling and logging mechanisms using Firebase Crashlytics for proactive bug detection",
+                                "Collaborated with 5-member development team using Agile/Scrum methodology with 2-week sprints",
+                                "Conducted code reviews and mentored 2 junior developers on Flutter best practices and Clean Architecture",
+                                "Established CI/CD pipelines using GitHub Actions, reducing deployment time from hours to minutes"
+                            ],
+                            "tags": [
+                                "Flutter",
+                                "Cordova",
+                                "REST APIs",
+                                "SQLite",
+                                "Firebase",
+                                "Git",
+                                "Agile/Scrum"
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

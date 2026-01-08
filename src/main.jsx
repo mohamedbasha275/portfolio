@@ -1,0 +1,212 @@
+import "/src/styles/app.scss"
+import {StrictMode, useEffect, useState} from 'react'
+import {createRoot} from 'react-dom/client'
+import {useApi} from "/src/hooks/api.js"
+import {useConstants} from "/src/hooks/constants.js"
+import {useUtils} from "/src/hooks/utils.js"
+import Preloader from "/src/components/loaders/Preloader.jsx"
+import DataProvider, {useData} from "/src/providers/DataProvider.jsx"
+import LanguageProvider from "/src/providers/LanguageProvider.jsx"
+import ViewportProvider from "/src/providers/ViewportProvider.jsx"
+import ThemeProvider from "/src/providers/ThemeProvider.jsx"
+import LocationProvider from "/src/providers/LocationProvider.jsx"
+import FeedbacksProvider from "/src/providers/FeedbacksProvider.jsx"
+import InputProvider from "/src/providers/InputProvider.jsx"
+import NavigationProvider from "/src/providers/NavigationProvider.jsx"
+import Portfolio from "/src/components/Portfolio.jsx"
+
+/** Initialization Script... **/
+let container = null
+
+document.addEventListener('DOMContentLoaded', function(event) {
+    if(container)
+        return
+
+    container = document.getElementById('root')
+    createRoot(document.getElementById('root')).render(<App/>)
+})
+
+/**
+ * This is the main app component. It wraps the content of the app with AppEssentialsWrapper and AppCapabilitiesWrapper.
+ * @return {JSX.Element}
+ * @constructor
+ */
+const App = () => {
+    return (
+        <AppEssentialsWrapper>
+            <AppCapabilitiesWrapper>
+                <Portfolio/>
+            </AppCapabilitiesWrapper>
+        </AppEssentialsWrapper>
+    )
+}
+
+/**
+ * This stack will wrap the entire app - these are considered essential components for the app booting up.
+ * @param children
+ * @return {JSX.Element}
+ * @constructor
+ */
+const AppEssentialsWrapper = ({children}) => {
+    const api = useApi()
+    const utils = useUtils()
+    const constants = useConstants()
+
+    const [settings, setSettings] = useState()
+
+    useEffect(() => {
+        if (window.location.pathname !== utils.file.BASE_URL)
+            window.history.pushState({}, '', utils.file.BASE_URL)
+
+        utils.file.loadJSON("/data/settings.json").then(response => {
+            if (!response) {
+                console.error("Failed to load settings.json. Check the file path and ensure it's accessible.")
+                console.error("Attempted path:", utils.file.resolvePath("/data/settings.json"))
+                // Set a minimal settings object to prevent blank screen
+                setSettings({
+                    preloaderSettings: { enabled: false },
+                    templateSettings: {},
+                    developerSettings: {}
+                })
+                return
+            }
+            _applyDeveloperSettings(response)
+            setSettings(response)
+
+            const consoleMessageForDevelopers = response?.consoleMessageForDevelopers
+            if(consoleMessageForDevelopers) {
+                const primaryColor = utils.css.getRootSCSSVariable('--bs-primary')
+                utils.log.info(consoleMessageForDevelopers.title, consoleMessageForDevelopers.items, primaryColor)
+            }
+        }).catch(error => {
+            console.error("Error loading settings.json:", error)
+            console.error("Attempted path:", utils.file.resolvePath("/data/settings.json"))
+            // Set a minimal settings object to prevent blank screen
+            setSettings({
+                preloaderSettings: { enabled: false },
+                templateSettings: {},
+                developerSettings: {}
+            })
+        })
+
+        api.analytics.reportVisit().then(() => {})
+    }, [])
+
+    const _applyDeveloperSettings = (settings) => {
+        const developerSettings = settings?.developerSettings
+        const debugMode = developerSettings?.debugMode
+        const fakeEmailRequests = developerSettings?.fakeEmailRequests
+        const stayOnThePreloaderScreen = developerSettings?.stayOnThePreloaderScreen
+
+        if(constants.PRODUCTION_MODE)
+            return settings
+
+        if(debugMode) {
+            settings.preloaderSettings.enabled = stayOnThePreloaderScreen
+            settings.templateSettings.backgroundStyle = "plain"
+            utils.storage.setWindowVariable("suspendAnimations", true)
+            utils.log.warn("DataProvider", "Debug Mode is enabled, so transitions and animated content—such as the preloader screen, background animations, and role text typing—will be skipped. You can disable it manually on settings.json or by running the app on PROD_MODE, which disables it by default.")
+        }
+
+        if(fakeEmailRequests) {
+            utils.storage.setWindowVariable("fakeEmailRequests", true)
+            utils.log.warn("DataProvider", "Fake email requests are enabled. This is only for development purposes and will be disabled automatically in production.")
+        }
+
+        if(stayOnThePreloaderScreen) {
+            utils.storage.setWindowVariable("stayOnThePreloaderScreen", true)
+            utils.log.warn("DataProvider", "Preloader screen will be displayed indefinitely because the developer flag 'stayOnThePreloaderScreen' is on. This is only for development purposes and will be disabled automatically in production.")
+        }
+    }
+
+    // Debug: Log settings state
+    useEffect(() => {
+        if (settings) {
+            console.log("Settings loaded successfully:", settings)
+        } else {
+            console.log("Settings not loaded yet, showing loading screen...")
+        }
+    }, [settings])
+
+    return (
+        <StrictMode>
+            {settings ? (
+                <Preloader preloaderSettings={settings["preloaderSettings"]}>
+                    <DataProvider settings={settings}>
+                        {children}
+                    </DataProvider>
+                </Preloader>
+            ) : (
+                <div style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: '100vh',
+                    backgroundColor: '#111111',
+                    color: '#ffffff',
+                    flexDirection: 'column',
+                    gap: '20px',
+                    fontFamily: 'Arial, sans-serif'
+                }}>
+                    <div style={{ fontSize: '24px', fontWeight: 'bold' }}>Loading portfolio...</div>
+                    <div style={{ fontSize: '14px', color: '#888' }}>
+                        If this persists, check the browser console (F12) for errors.
+                    </div>
+                    <div style={{ fontSize: '12px', color: '#666', marginTop: '20px' }}>
+                        BASE_URL: {utils.file.BASE_URL || 'undefined'}
+                    </div>
+                </div>
+            )}
+        </StrictMode>
+    )
+}
+
+/**
+ * This stack will wrap the app capabilities - these will be initialized after the app has booted up and loaded its essential components.
+ * @param children
+ * @return {JSX.Element}
+ * @constructor
+ */
+const AppCapabilitiesWrapper = ({ children }) => {
+    const data = useData()
+
+    const [selectedThemeId, setSelectedThemeId] = useState(null)
+
+    const appSettings = data.getSettings()
+    const appStrings = data.getStrings()
+    const appSections = data.getSections()
+    const appCategories = data.getCategories()
+
+    const supportedLanguages = appSettings["supportedLanguages"]
+    const supportedThemes = appSettings["supportedThemes"]
+    const defaultLanguageId = appSettings["templateSettings"].defaultLanguageId
+    const defaultThemeId = appSettings["templateSettings"].defaultThemeId
+    const animatedCursorEnabled = appSettings["templateSettings"].animatedCursorEnabled
+    const showSpinnerOnThemeChange = appSettings["templateSettings"].showSpinnerOnThemeChange
+
+    return (
+        <LanguageProvider supportedLanguages={supportedLanguages}
+                          defaultLanguageId={defaultLanguageId}
+                          appStrings={appStrings}
+                          selectedThemeId={selectedThemeId}>
+            <ViewportProvider>
+                <InputProvider>
+                    <FeedbacksProvider canHaveAnimatedCursor={animatedCursorEnabled}>
+                        <ThemeProvider supportedThemes={supportedThemes}
+                                       defaultThemeId={defaultThemeId}
+                                       showSpinnerOnThemeChange={showSpinnerOnThemeChange}
+                                       onThemeChanged={setSelectedThemeId}>
+                            <LocationProvider sections={appSections}
+                                              categories={appCategories}>
+                                <NavigationProvider sections={appSections}
+                                                    categories={appCategories}>
+                                    {children}
+                                </NavigationProvider>
+                            </LocationProvider>
+                        </ThemeProvider>
+                    </FeedbacksProvider>
+                </InputProvider>
+            </ViewportProvider>
+        </LanguageProvider>
+    )
+}

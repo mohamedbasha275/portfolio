@@ -1,0 +1,661 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Tech Skills",
+                "title_short_nav": "Tech Skills",
+                "title_long_prefix": "Explore",
+                "title_long": "My {{Technical Skills}}"
+            }
+        }
+    },
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleStack",
+            "locales": {
+                "en": {
+                    "title": "Mobile Development"
+                }
+            },
+            "settings": {
+                "max_items_per_row": 3,
+                "max_rows_collapse_threshold": 6,
+                "order_items_by": "id",
+                "order_items_sort": "asc",
+                "round_icons": false
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "faIcon": "fa-brands fa-flutter",
+                    "faIconColors": {
+                        "fill": "#02569B"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Flutter",
+                            "text": "Expert in Flutter for cross-platform mobile development."
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "faIcon": "fa-brands fa-dart-lang",
+                    "faIconColors": {
+                        "fill": "#0175C2"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Dart",
+                            "text": "Proficient in Dart programming language."
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "faIcon": "fa-solid fa-boxes-stacked",
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Provider",
+                            "text": "State management using Provider pattern."
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "faIcon": "fa-solid fa-diagram-project",
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Bloc",
+                            "text": "State management with Bloc pattern."
+                        }
+                    }
+                },
+                {
+                    "id": 5,
+                    "faIcon": "fa-solid fa-cubes",
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Cubit",
+                            "text": "State management using Cubit pattern."
+                        }
+                    }
+                },
+                {
+                    "id": 6,
+                    "faIcon": "fa-solid fa-sliders-h",
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "State Management",
+                            "text": "Expert in various state management solutions."
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "component": "ArticleStack",
+            "locales": {
+                "en": {
+                    "title": "Architecture & Patterns"
+                }
+            },
+            "settings": {
+                "max_items_per_row": 3,
+                "max_rows_collapse_threshold": 6,
+                "order_items_by": "id",
+                "order_items_sort": "asc",
+                "round_icons": false
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "faIcon": "fa-solid fa-building",
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Clean Architecture",
+                            "text": "Expert in Clean Architecture principles."
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "faIcon": "fa-solid fa-diagram-project",
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "MVC",
+                            "text": "Model-View-Controller architecture pattern."
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "faIcon": "fa-solid fa-diagram-project",
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "MVVM",
+                            "text": "Model-View-ViewModel architecture pattern."
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "faIcon": "fa-solid fa-star",
+                    "faIconColors": {
+                        "fill": "#FFD700"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "SOLID Principles",
+                            "text": "Strong understanding of SOLID design principles."
+                        }
+                    }
+                },
+                {
+                    "id": 5,
+                    "faIcon": "fa-solid fa-puzzle-piece",
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Design Patterns",
+                            "text": "Proficient in various design patterns."
+                        }
+                    }
+                },
+                {
+                    "id": 6,
+                    "faIcon": "fa-solid fa-cube",
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "OOP",
+                            "text": "Object-Oriented Programming principles."
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "component": "ArticleStack",
+            "locales": {
+                "en": {
+                    "title": "Testing & CI/CD"
+                }
+            },
+            "settings": {
+                "max_items_per_row": 3,
+                "max_rows_collapse_threshold": 6,
+                "order_items_by": "id",
+                "order_items_sort": "asc",
+                "round_icons": false
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "faIcon": "fa-solid fa-flask",
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Unit Testing",
+                            "text": "Writing comprehensive unit tests."
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "faIcon": "fa-solid fa-mobile-screen-button",
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Widget Testing",
+                            "text": "Widget testing in Flutter."
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "faIcon": "fa-solid fa-plug",
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Integration Testing",
+                            "text": "End-to-end integration testing."
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "faIcon": "fa-brands fa-flutter",
+                    "faIconColors": {
+                        "fill": "#02569B"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Flutter Test",
+                            "text": "Flutter testing framework."
+                        }
+                    }
+                },
+                {
+                    "id": 5,
+                    "faIcon": "fa-brands fa-github",
+                    "faIconColors": {
+                        "fill": "#FFFFFF"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "GitHub Actions",
+                            "text": "CI/CD automation with GitHub Actions."
+                        }
+                    }
+                },
+                {
+                    "id": 6,
+                    "faIcon": "fa-solid fa-gear",
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "CI/CD Pipelines",
+                            "text": "Continuous Integration and Deployment."
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "component": "ArticleStack",
+            "locales": {
+                "en": {
+                    "title": "Backend & APIs"
+                }
+            },
+            "settings": {
+                "max_items_per_row": 3,
+                "max_rows_collapse_threshold": 6,
+                "order_items_by": "id",
+                "order_items_sort": "asc",
+                "round_icons": false
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "faIcon": "fa-solid fa-server",
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "REST APIs",
+                            "text": "Building and consuming RESTful APIs."
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "faIcon": "fa-solid fa-project-diagram",
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "GraphQL",
+                            "text": "Basic understanding of GraphQL.",
+                            "level": "Basic"
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "faIcon": "fa-brands fa-laravel",
+                    "faIconColors": {
+                        "fill": "#FF2D20"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Laravel",
+                            "text": "PHP framework for web applications."
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "faIcon": "fa-brands fa-php",
+                    "faIconColors": {
+                        "fill": "#777BB4"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "PHP",
+                            "text": "Server-side scripting language."
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "component": "ArticleStack",
+            "locales": {
+                "en": {
+                    "title": "Databases"
+                }
+            },
+            "settings": {
+                "max_items_per_row": 3,
+                "max_rows_collapse_threshold": 6,
+                "order_items_by": "id",
+                "order_items_sort": "asc",
+                "round_icons": false
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "faIcon": "fa-solid fa-database",
+                    "faIconColors": {
+                        "fill": "#003B57"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "SQLite",
+                            "text": "Lightweight SQL database engine."
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "faIcon": "fa-solid fa-database",
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Hive",
+                            "text": "Lightweight NoSQL database for Flutter."
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "faIcon": "fa-solid fa-database",
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Isar",
+                            "text": "Fast NoSQL database for Flutter."
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "faIcon": "fa-solid fa-database",
+                    "faIconColors": {
+                        "fill": "#4479A1"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "MySQL",
+                            "text": "Relational database management system."
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "component": "ArticleStack",
+            "locales": {
+                "en": {
+                    "title": "DevOps & Tools"
+                }
+            },
+            "settings": {
+                "max_items_per_row": 3,
+                "max_rows_collapse_threshold": 6,
+                "order_items_by": "id",
+                "order_items_sort": "asc",
+                "round_icons": false
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "faIcon": "fa-brands fa-git-alt",
+                    "faIconColors": {
+                        "fill": "#F05032"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Git",
+                            "text": "Version control system."
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "faIcon": "fa-brands fa-github",
+                    "faIconColors": {
+                        "fill": "#FFFFFF"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "GitHub/GitLab",
+                            "text": "Code hosting and collaboration platforms."
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "faIcon": "fa-solid fa-fire",
+                    "faIconColors": {
+                        "fill": "#FFA611"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Firebase",
+                            "text": "Auth, Firestore, Messaging, Crashlytics."
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "faIcon": "fa-solid fa-link",
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "App Links & Deep Linking",
+                            "text": "Deep linking implementation."
+                        }
+                    }
+                },
+                {
+                    "id": 5,
+                    "faIcon": "fa-solid fa-credit-card",
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Payment Integration",
+                            "text": "Stripe, PayPal, and local payment solutions."
+                        }
+                    }
+                },
+                {
+                    "id": 6,
+                    "faIcon": "fa-solid fa-bell",
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Push Notifications",
+                            "text": "Implementing push notifications."
+                        }
+                    }
+                },
+                {
+                    "id": 7,
+                    "faIcon": "fa-solid fa-globe",
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Localization",
+                            "text": "Multi-language support and RTL handling."
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "component": "ArticleStack",
+            "locales": {
+                "en": {
+                    "title": "Web"
+                }
+            },
+            "settings": {
+                "max_items_per_row": 3,
+                "max_rows_collapse_threshold": 6,
+                "order_items_by": "id",
+                "order_items_sort": "asc",
+                "round_icons": false
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "faIcon": "fa-brands fa-html5",
+                    "faIconColors": {
+                        "fill": "#E34F26"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "HTML",
+                            "text": "HyperText Markup Language."
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "faIcon": "fa-brands fa-css3-alt",
+                    "faIconColors": {
+                        "fill": "#1572B6"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "CSS",
+                            "text": "Cascading Style Sheets."
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "faIcon": "fa-brands fa-js",
+                    "faIconColors": {
+                        "fill": "#F7DF1E"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "JavaScript",
+                            "text": "Programming language for web development."
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "faIcon": "fa-brands fa-js",
+                    "faIconColors": {
+                        "fill": "#0769AD"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "jQuery",
+                            "text": "JavaScript library."
+                        }
+                    }
+                },
+                {
+                    "id": 5,
+                    "faIcon": "fa-brands fa-bootstrap",
+                    "faIconColors": {
+                        "fill": "#7952B3"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Bootstrap",
+                            "text": "CSS framework for responsive design."
+                        }
+                    }
+                },
+                {
+                    "id": 6,
+                    "faIcon": "fa-solid fa-mobile-screen-button",
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Cordova",
+                            "text": "Hybrid mobile app framework."
+                        }
+                    }
+                },
+                {
+                    "id": 7,
+                    "faIcon": "fa-solid fa-mobile-screen-button",
+                    "faIconColors": {
+                        "fill": "#8beff8"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "Framework7",
+                            "text": "Full-featured mobile framework."
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,118 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Awards",
+                "title_short_nav": "Certifications",
+                "title_long_prefix": "Here are my",
+                "title_long": "Career {{Certifications}}"
+            }
+        }
+    },
+    "articles": [
+        {
+            "id": 2,
+            "component": "ArticleThread",
+            "locales": {
+                "en": {
+                    "title": "Awards"
+                }
+            },
+            "settings": {
+                "max_rows_collapse_threshold": 4,
+                "order_items_by": "date",
+                "order_items_sort": "desc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "date": {
+                        "year": 2022,
+                        "month": 1
+                    },
+                    "preview": {
+                        "links": [],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "{{The Complete Flutter & Dart Development Course}}",
+                            "province": "",
+                            "country": "",
+                            "institution": "",
+                            "text": "Completed comprehensive Flutter and Dart development course covering fundamental concepts, widget development, state management, and building cross-platform mobile applications."
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "date": {
+                        "year": 2022,
+                        "month": 5
+                    },
+                    "preview": {
+                        "links": [],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "{{Flutter Advanced Course Bloc and MVVM Pattern}}",
+                            "province": "",
+                            "country": "",
+                            "institution": "",
+                            "text": "Advanced Flutter course focusing on BLoC (Business Logic Component) pattern and MVVM (Model-View-ViewModel) architecture for building scalable and maintainable Flutter applications."
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "date": {
+                        "year": 2022,
+                        "month": 7
+                    },
+                    "preview": {
+                        "links": [],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "{{Deep Dive into Clean Architecture in Flutter}}",
+                            "province": "",
+                            "country": "",
+                            "institution": "",
+                            "text": "In-depth course on implementing Clean Architecture principles in Flutter applications, covering dependency injection, separation of concerns, and testable code structure."
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "date": {
+                        "year": 2024,
+                        "month": 1
+                    },
+                    "preview": {
+                        "links": [],
+                        "screenshots": [],
+                        "screenshotsAspectRatio": "",
+                        "youtubeVideo": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "{{Flutter Payment Integration: Stripe, PayPal & More!}}",
+                            "province": "",
+                            "country": "",
+                            "institution": "",
+                            "text": "Comprehensive course on integrating payment gateways in Flutter applications, including Stripe, PayPal, and other payment providers for secure and seamless transaction processing."
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

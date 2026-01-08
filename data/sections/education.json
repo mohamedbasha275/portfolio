@@ -1,0 +1,65 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Education",
+                "title_short_nav": "Education",
+                "title_long_prefix": "This is my",
+                "title_long": "{{Education}} Background"
+            }
+        }
+    },
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleTimeline",
+            "locales": {
+                "en": {}
+            },
+            "settings": {
+                "order_items_by": "dateStart",
+                "order_items_sort": "desc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "",
+                    "faIcon": "fa-solid fa-building-columns",
+                    "faIconColors": {
+                        "bg": "",
+                        "fill": ""
+                    },
+                    "dateStart": {
+                        "year": 2014,
+                        "month": 9
+                    },
+                    "dateEnd": {
+                        "year": 2018,
+                        "month": 6
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "{{Bachelor's}} Degree in Information Systems",
+                            "province": "Assiut",
+                            "country": "Egypt",
+                            "institution": "Faculty of Computers and Information / Assiut University",
+                            "text": "Earned a [[Bachelor's degree]] from the Information Systems Department, specializing in Software Engineering and Database Management.",
+                            "list": [
+                                "Specialized in Software Engineering and Database Management",
+                                "Graduated with a strong foundation in OOP, Data Structures, and Algorithms",
+                                "Completed graduation project on Salfny"
+                            ],
+                            "tags": [
+                                "Software Engineering",
+                                "Database Management",
+                                "OOP",
+                                "Data Structures",
+                                "Algorithms"
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

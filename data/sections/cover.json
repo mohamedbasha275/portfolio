@@ -1,0 +1,93 @@
+{
+    "title": {
+        "locales": {
+            "en": {
+                "title_short": "Welcome!",
+                "title_short_nav": "About me",
+                "title_long_prefix": "Hello...",
+                "title_long": "I'm {{Mohammed Basha!}}"
+            }
+        }
+    },
+    "articles": [
+        {
+            "id": 1,
+            "component": "ArticleInlineList",
+            "locales": {
+                "en": {}
+            },
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc",
+                "display_as_list_if_width_is_lower_than": 380
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "label": "Cairo – Egypt",
+                    "link": {
+                        "href": "",
+                        "tooltipString": ""
+                    },
+                    "faIcon": "pi pi-map-marker"
+                },
+                {
+                    "id": 2,
+                    "label": "mohamedbasha275@gmail.com",
+                    "link": {
+                        "href": "mailto:mohamedbasha275@gmail.com",
+                        "tooltipString": "email_me"
+                    },
+                    "faIcon": "fa-regular fa-envelope"
+                },
+                {
+                    "id": 3,
+                    "label": "@mohamedbasha275",
+                    "link": {
+                        "href": "https://github.com/mohamedbasha275",
+                        "tooltipString": "see_on_github"
+                    },
+                    "faIcon": "fa-brands fa-github"
+                },
+                {
+                    "id": 4,
+                    "label": "mohammed-basha-b246501b0",
+                    "link": {
+                        "href": "https://linkedin.com/in/mohammed-basha-b246501b0",
+                        "tooltipString": "open_website"
+                    },
+                    "faIcon": "fa-brands fa-linkedin"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "component": "ArticleText",
+            "locales": {
+                "en": {
+                    "title": "{{A little bit}} about me..."
+                }
+            },
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc"
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "images/pictures/about-texts-image-1.png",
+                    "faIcon": "",
+                    "faIconColors": {
+                        "bg": "",
+                        "fill": ""
+                    },
+                    "locales": {
+                        "en": {
+                            "text": "<p>Results-driven {{Mobile Application Developer}} specializing in Flutter, with a portfolio of [[15+ published apps]] serving thousands of daily users.</p><p>I transform business requirements into elegant, high-performance mobile solutions using Clean Architecture and industry best practices.</p><p>My expertise spans the full development lifecycle — from architecture design and API integration to Play Store / App Store deployment and performance optimization.</p>"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}
