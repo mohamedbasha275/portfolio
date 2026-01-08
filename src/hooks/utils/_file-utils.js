@@ -27,14 +27,20 @@ export const _fileUtils = {
             const response = await fetch(resolvedPath)
             const contentType = response.headers.get("content-type") || ""
 
-            if (!response.ok || !contentType.includes("application/json")) {
+            if (!response.ok) {
+                console.error(`[FileUtils] Failed to load JSON: ${resolvedPath} - Status: ${response.status} ${response.statusText}`)
+                return null
+            }
+
+            if (!contentType.includes("application/json")) {
+                console.error(`[FileUtils] Invalid content type for JSON: ${resolvedPath} - Content-Type: ${contentType}`)
                 return null
             }
 
             return await response.json()
         }
         catch (error) {
-            console.error(`Failed to load JSON from ${resolvedPath}:`, error)
+            console.error(`[FileUtils] Failed to load JSON from ${resolvedPath}:`, error)
             return null
         }
     },

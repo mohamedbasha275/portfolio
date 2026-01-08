@@ -70,14 +70,39 @@ function DataProvider({ children, settings }) {
         const jCategories = await utils.file.loadJSON("/data/categories.json")
         const jSections = await utils.file.loadJSON("/data/sections.json")
 
-        const categories = jCategories.categories
-        const sections = jSections.sections
+        // Check if essential files loaded successfully
+        if (!jCategories || !jCategories.categories) {
+            console.error("Failed to load categories.json")
+            utils.log.throwError("DataProvider", "Failed to load categories.json. Please check the file path and ensure it exists.")
+            return {
+                strings: jStrings || {},
+                profile: jProfile || {},
+                settings: settings,
+                sections: [],
+                categories: []
+            }
+        }
+
+        if (!jSections || !jSections.sections) {
+            console.error("Failed to load sections.json")
+            utils.log.throwError("DataProvider", "Failed to load sections.json. Please check the file path and ensure it exists.")
+            return {
+                strings: jStrings || {},
+                profile: jProfile || {},
+                settings: settings,
+                sections: [],
+                categories: jCategories.categories || []
+            }
+        }
+
+        const categories = jCategories.categories || []
+        const sections = jSections.sections || []
         _bindCategoriesAndSections(categories, sections)
         await _loadSectionsData(sections)
 
         return {
-            strings: jStrings,
-            profile: jProfile,
+            strings: jStrings || {},
+            profile: jProfile || {},
             settings: settings,
             sections: sections,
             categories: categories
