@@ -59,6 +59,10 @@ const AppEssentialsWrapper = ({children}) => {
             window.history.pushState({}, '', utils.file.BASE_URL)
 
         utils.file.loadJSON("/data/settings.json").then(response => {
+            if (!response) {
+                console.error("Failed to load settings.json. Check the file path and ensure it's accessible.")
+                return
+            }
             _applyDeveloperSettings(response)
             setSettings(response)
 
@@ -67,6 +71,8 @@ const AppEssentialsWrapper = ({children}) => {
                 const primaryColor = utils.css.getRootSCSSVariable('--bs-primary')
                 utils.log.info(consoleMessageForDevelopers.title, consoleMessageForDevelopers.items, primaryColor)
             }
+        }).catch(error => {
+            console.error("Error loading settings.json:", error)
         })
 
         api.analytics.reportVisit().then(() => {})
@@ -101,12 +107,28 @@ const AppEssentialsWrapper = ({children}) => {
 
     return (
         <StrictMode>
-            {settings && (
+            {settings ? (
                 <Preloader preloaderSettings={settings["preloaderSettings"]}>
                     <DataProvider settings={settings}>
                         {children}
                     </DataProvider>
                 </Preloader>
+            ) : (
+                <div style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: '100vh',
+                    backgroundColor: '#111111',
+                    color: '#ffffff',
+                    flexDirection: 'column',
+                    gap: '20px'
+                }}>
+                    <div>Loading portfolio...</div>
+                    <div style={{ fontSize: '14px', color: '#888' }}>
+                        If this persists, check the browser console for errors.
+                    </div>
+                </div>
             )}
         </StrictMode>
     )
