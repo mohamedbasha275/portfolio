@@ -61,6 +61,13 @@ const AppEssentialsWrapper = ({children}) => {
         utils.file.loadJSON("/data/settings.json").then(response => {
             if (!response) {
                 console.error("Failed to load settings.json. Check the file path and ensure it's accessible.")
+                console.error("Attempted path:", utils.file.resolvePath("/data/settings.json"))
+                // Set a minimal settings object to prevent blank screen
+                setSettings({
+                    preloaderSettings: { enabled: false },
+                    templateSettings: {},
+                    developerSettings: {}
+                })
                 return
             }
             _applyDeveloperSettings(response)
@@ -73,6 +80,13 @@ const AppEssentialsWrapper = ({children}) => {
             }
         }).catch(error => {
             console.error("Error loading settings.json:", error)
+            console.error("Attempted path:", utils.file.resolvePath("/data/settings.json"))
+            // Set a minimal settings object to prevent blank screen
+            setSettings({
+                preloaderSettings: { enabled: false },
+                templateSettings: {},
+                developerSettings: {}
+            })
         })
 
         api.analytics.reportVisit().then(() => {})

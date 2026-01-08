@@ -22,16 +22,25 @@ export const _fileUtils = {
      */
     loadJSON: async (path) => {
         const resolvedPath = _fileUtils.resolvePath(path)
+        console.log(`Loading JSON from: ${resolvedPath}`)
 
         try {
             const response = await fetch(resolvedPath)
             const contentType = response.headers.get("content-type") || ""
 
-            if (!response.ok || !contentType.includes("application/json")) {
+            if (!response.ok) {
+                console.error(`Failed to load JSON: ${response.status} ${response.statusText} from ${resolvedPath}`)
                 return null
             }
 
-            return await response.json()
+            // GitHub Pages may serve JSON with text/plain, so be more lenient
+            if (!contentType.includes("application/json") && !contentType.includes("text/plain")) {
+                console.warn(`Unexpected content-type: ${contentType} for ${resolvedPath}`)
+            }
+
+            const data = await response.json()
+            console.log(`Successfully loaded JSON from: ${resolvedPath}`)
+            return data
         }
         catch (error) {
             console.error(`Failed to load JSON from ${resolvedPath}:`, error)

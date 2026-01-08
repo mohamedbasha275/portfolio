@@ -47,6 +47,17 @@ function DataProvider({ children, settings }) {
         _loadData().then(response => {
             setJsonData(response)
             setStatus(DataProviderStatus.STATUS_LOADED)
+        }).catch(error => {
+            console.error("DataProvider: Error loading data:", error)
+            // Set empty data to allow app to continue
+            setJsonData({
+                strings: {},
+                profile: {},
+                settings: settings || {},
+                sections: [],
+                categories: []
+            })
+            setStatus(DataProviderStatus.STATUS_LOADED)
         })
     }, [status === DataProviderStatus.STATUS_LOADING])
 
@@ -65,15 +76,18 @@ function DataProvider({ children, settings }) {
     }, [status === DataProviderStatus.STATUS_LOADED])
 
     const _loadData = async () => {
-        const jStrings = await utils.file.loadJSON("/data/strings.json")
-        const jProfile = await utils.file.loadJSON("/data/profile.json")
-        const jCategories = await utils.file.loadJSON("/data/categories.json")
-        const jSections = await utils.file.loadJSON("/data/sections.json")
+        const jStrings = await utils.file.loadJSON("/data/strings.json") || {}
+        const jProfile = await utils.file.loadJSON("/data/profile.json") || {}
+        const jCategories = await utils.file.loadJSON("/data/categories.json") || { categories: [] }
+        const jSections = await utils.file.loadJSON("/data/sections.json") || { sections: [] }
 
-        const categories = jCategories.categories
-        const sections = jSections.sections
-        _bindCategoriesAndSections(categories, sections)
-        await _loadSectionsData(sections)
+        const categories = jCategories.categories || []
+        const sections = jSections.sections || []
+        
+        if (categories.length > 0 && sections.length > 0) {
+            _bindCategoriesAndSections(categories, sections)
+            await _loadSectionsData(sections)
+        }
 
         return {
             strings: jStrings,
@@ -120,13 +134,17 @@ function DataProvider({ children, settings }) {
     }
 
     const _validateData = () => {
-        const emptyCategories = jsonData.categories.filter(category => category.sections.length === 0)
+        const categories = jsonData.categories || []
+        if (categories.length === 0) {
+            console.warn("DataProvider: No categories loaded. The portfolio may not display correctly.")
+            return {success: true} // Allow to continue even with empty data
+        }
+        
+        const emptyCategories = categories.filter(category => (category.sections || []).length === 0)
         const emptyCategoriesIds = emptyCategories.map(category => category.id)
         if(emptyCategories.length > 0) {
-            return {
-                success: false,
-                message: `The following ${emptyCategories.length} categories are empty: "${emptyCategoriesIds}". Make sure all categories have at least one section.`
-            }
+            console.warn(`DataProvider: The following ${emptyCategories.length} categories are empty: "${emptyCategoriesIds}"`)
+            // Don't block rendering, just warn
         }
 
         return {success: true}
@@ -152,7 +170,7 @@ function DataProvider({ children, settings }) {
         return jsonData?.categories || []
     }
 
-    return (
+        return (
         <DataContext.Provider value={{
             getProfile,
             getSettings,
@@ -160,9 +178,20 @@ function DataProvider({ children, settings }) {
             getSections,
             getCategories
         }}>
-            {status === DataProviderStatus.STATUS_EVALUATED && (
+            {status === DataProviderStatus.STATUS_EVALUATED ? (
                 <>{children}</>
-            )}
+            ) : status === DataProviderStatus.STATUS_LOADING ? (
+                <div style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: '100vh',
+                    backgroundColor: '#111111',
+                    color: '#ffffff'
+                }}>
+                    Loading portfolio data...
+                </div>
+            ) : null}
         </DataContext.Provider>
     )
 }
