@@ -48,7 +48,9 @@ export const _fileUtils = {
         if(path.startsWith("http")) return path
 
         const baseUrl = _fileUtils.BASE_URL || ""
-        const fullPath = baseUrl + path
+        // Remove leading slash from path if it exists, then combine with baseUrl
+        const cleanPath = path.startsWith("/") ? path.slice(1) : path
+        const fullPath = baseUrl + cleanPath
         return fullPath.replace(/(^|[^:])\/\//g, "$1/")
     },
 }
