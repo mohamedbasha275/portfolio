@@ -25,22 +25,22 @@
             "faIcon": "fa-solid fa-briefcase"
         },
         {
-            "id": "portfolio",
+            "id": "projects",
             "categoryId": "showcase",
-            "jsonPath": "/data/sections/portfolio.json",
+            "jsonPath": "/data/sections/projects.json",
             "faIcon": "fa-solid fa-folder-open"
         },
         {
-            "id": "achievements",
+            "id": "certifications",
             "categoryId": "showcase",
-            "jsonPath": "/data/sections/achievements.json",
+            "jsonPath": "/data/sections/certifications.json",
             "faIcon": "fa-solid fa-award"
         },
         {
-            "id": "updates",
-            "categoryId": "more",
-            "jsonPath": "/data/sections/updates.json",
-            "faIcon": "fa-solid fa-rss"
+            "id": "soft-skills",
+            "categoryId": "showcase",
+            "jsonPath": "/data/sections/soft-skills.json",
+            "faIcon": "fa-solid fa-user-check"
         },
         {
             "id": "contact",

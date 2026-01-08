@@ -1,8 +1,8 @@
 {
-    "name": "Mark Choi",
+    "name": "Mohammed Basha",
 
     "profilePictureUrl": "images/pictures/profile-picture.jpg",
-    "resumePdfUrl": "",
+    "resumePdfUrl": "Mohammed-Basha-Flutter.pdf",
 
     "statusCircleVisible": true,
     "statusCircleVariant": "available",
@@ -10,17 +10,17 @@
 
     "locales": {
         "en": {
-            "localized_name": "Mark Choi",
-            "localized_name_stylized": " [[Mark {{Choi}}]]",
-            "status_message_available_for_freelance": "Available for freelance!",
+            "localized_name": "Mohammed Basha",
+            "localized_name_stylized": " [[Mohammed {{Basha}}]]",
+            "status_message_available_for_freelance": "Available for Flutter freelance projects!",
             "roles": [
-                "Backend Developer",
-                "Frontend Developer",
-                "DevOps Engineer",
-                "UX Designer"
+                "Flutter Developer",
+                "Mobile App Developer",
+                "Cross-Platform Developer",
+                "UI Enthusiast"
             ],
-            "name_pronunciation_ipa": "/mark chwe/",
-            "name_pronunciation_audio_url": "audio/english-name-pronunciation.mp3"
+            "name_pronunciation_ipa": "",
+            "name_pronunciation_audio_url": ""
         },
         "es": {
             "status_message_available_for_freelance": "¡Disponible para freelance!",

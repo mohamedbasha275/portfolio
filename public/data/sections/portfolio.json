@@ -2,28 +2,28 @@
     "title": {
         "locales": {
             "en": {
-                "title_short": "Portfolio",
-                "title_short_nav": "Portfolio",
+                "title_short": "Projects",
+                "title_short_nav": "Projects",
                 "title_long_prefix": "Take a look at",
-                "title_long": "My {{Portfolio}}"
+                "title_long": "My {{Projects}}"
             },
             "es": {
-                "title_short": "Portafolio",
-                "title_short_nav": "Portafolio",
+                "title_short": "Proyectos",
+                "title_short_nav": "Proyectos",
                 "title_long_prefix": "Explora",
-                "title_long": "Mi {{Portafolio}}"
+                "title_long": "Mis {{Proyectos}}"
             },
             "fr": {
-                "title_short": "Portfolio",
-                "title_short_nav": "Portfolio",
+                "title_short": "Projets",
+                "title_short_nav": "Projets",
                 "title_long_prefix": "Découvrez",
-                "title_long": "Mon {{Portfolio}}"
+                "title_long": "Mes {{Projets}}"
             },
             "ko": {
-                "title_short": "포트폴리오",
-                "title_short_nav": "포트폴리오",
+                "title_short": "프로젝트",
+                "title_short_nav": "프로젝트",
                 "title_long_prefix": "이것은 내",
-                "title_long": "{{포트폴리오}}입니다"
+                "title_long": "{{프로젝트}}입니다"
             }
         }
     },

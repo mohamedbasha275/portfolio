@@ -31,29 +31,29 @@
 
 @import "theme-variables-builder";
 
-$primary: #9dff8e;
-$secondary: #a4afb5;
-$dark: #161616;
+$primary: #8beff8; // requested accent color
+$secondary: #9aa4b5;
+$dark: #050816;
 $danger: #fdd2d2;
 $muted: #6c757d;
 
-$base-bg: #0c0c0c;
-$base-bg-light: #181818;
-$base-bg-dark: #090909;
+$base-bg: #000000;        // main page background (pure black)
+$base-bg-light: #0C1528;  // slightly lighter navy for animated circles
+$base-bg-dark: #000000;
 
-$texts: #EEEEEE;
-$texts-inverted: #111111;
+$texts: #e5f2ff;
+$texts-inverted: #050816;
 
-$base-container-bg: #191919;
-$base-popover-bg: #0e0e0e;
+$base-container-bg: #0C1528;      // main cards / sidebar background
+$base-popover-bg: #081020;
 $base-boards: lighten($base-container-bg, 3%);
-$base-info-badges: lighten($dark, 3%);
-$empty: darken($base-container-bg, 3%);
-$empty-accent: #131313;
+$base-info-badges: lighten($dark, 6%);
+$empty: darken($base-container-bg, 4%);
+$empty-accent: #040712;
 
-$borders: #1D1D1D;
-$scrollbar-track: #101010;
-$scrollbar-thumb: #32343a;
+$borders: #111827;
+$scrollbar-track: #050816;
+$scrollbar-thumb: #1f2937;
 
 :root {
     @include build-theme(

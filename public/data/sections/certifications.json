@@ -2,7 +2,7 @@
     "title": {
         "locales": {
             "en": {
-                "title_short": "Awards",
+                "title_short": "Certifications",
                 "title_short_nav": "Certifications",
                 "title_long_prefix": "Here are my",
                 "title_long": "Career {{Certifications}}"
@@ -33,10 +33,10 @@
             "id": 2,
             "component": "ArticleThread",
             "locales": {
-                "en": { "title": "Awards" },
-                "es": { "title": "Premios" },
-                "fr": { "title": "Récompenses" },
-                "ko": { "title": "수상 내역" }
+                "en": { "title": "Certifications" },
+                "es": { "title": "Certificaciones" },
+                "fr": { "title": "Certifications" },
+                "ko": { "title": "인증서" }
             },
             "settings": {
                 "max_rows_collapse_threshold": 4,

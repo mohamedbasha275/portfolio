@@ -14,9 +14,10 @@ $font-family-base: 'Saira', sans-serif;
 $headings-font-family: 'Orbitron', sans-serif;
 
 /** Static Colors **/
-$loader-background: #111111;
+$loader-background: #0C1528;
 $loader-contrast: #FFFFFF;
-$primary: #36ad59;
+// Global primary accent (customized for Mohammed's palette)
+$primary: #8beff8;
 
 /** Z-Indexing **/
 $z-index-background: -1;
