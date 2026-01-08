@@ -119,6 +119,15 @@ const AppEssentialsWrapper = ({children}) => {
         }
     }
 
+    // Debug: Log settings state
+    useEffect(() => {
+        if (settings) {
+            console.log("Settings loaded successfully:", settings)
+        } else {
+            console.log("Settings not loaded yet, showing loading screen...")
+        }
+    }, [settings])
+
     return (
         <StrictMode>
             {settings ? (
@@ -136,11 +145,15 @@ const AppEssentialsWrapper = ({children}) => {
                     backgroundColor: '#111111',
                     color: '#ffffff',
                     flexDirection: 'column',
-                    gap: '20px'
+                    gap: '20px',
+                    fontFamily: 'Arial, sans-serif'
                 }}>
-                    <div>Loading portfolio...</div>
+                    <div style={{ fontSize: '24px', fontWeight: 'bold' }}>Loading portfolio...</div>
                     <div style={{ fontSize: '14px', color: '#888' }}>
-                        If this persists, check the browser console for errors.
+                        If this persists, check the browser console (F12) for errors.
+                    </div>
+                    <div style={{ fontSize: '12px', color: '#666', marginTop: '20px' }}>
+                        BASE_URL: {utils.file.BASE_URL || 'undefined'}
                     </div>
                 </div>
             )}

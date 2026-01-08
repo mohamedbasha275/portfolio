@@ -170,6 +170,17 @@ function DataProvider({ children, settings }) {
         return jsonData?.categories || []
     }
 
+    // Debug: Log status changes
+    useEffect(() => {
+        console.log(`DataProvider status: ${status}`)
+        if (status === DataProviderStatus.STATUS_EVALUATED) {
+            console.log("DataProvider: Data loaded successfully", {
+                categories: jsonData.categories?.length || 0,
+                sections: jsonData.sections?.length || 0
+            })
+        }
+    }, [status])
+
         return (
         <DataContext.Provider value={{
             getProfile,
@@ -187,11 +198,30 @@ function DataProvider({ children, settings }) {
                     alignItems: 'center',
                     height: '100vh',
                     backgroundColor: '#111111',
-                    color: '#ffffff'
+                    color: '#ffffff',
+                    fontFamily: 'Arial, sans-serif'
                 }}>
-                    Loading portfolio data...
+                    <div>
+                        <div style={{ fontSize: '20px', marginBottom: '10px' }}>Loading portfolio data...</div>
+                        <div style={{ fontSize: '12px', color: '#888' }}>Status: {status}</div>
+                    </div>
                 </div>
-            ) : null}
+            ) : (
+                <div style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    height: '100vh',
+                    backgroundColor: '#111111',
+                    color: '#ffffff',
+                    fontFamily: 'Arial, sans-serif'
+                }}>
+                    <div>
+                        <div style={{ fontSize: '20px', marginBottom: '10px' }}>Initializing...</div>
+                        <div style={{ fontSize: '12px', color: '#888' }}>Status: {status}</div>
+                    </div>
+                </div>
+            )}
         </DataContext.Provider>
     )
 }
